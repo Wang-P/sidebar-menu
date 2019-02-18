@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	    <link rel="stylesheet" href="css/style.css">
+	    <title>Sidebar toogle menu for Bootstrap 4</title>
+	</head>
+	<body>
+		<div class="d-flex" id="wrapper">
+
+			<!-- sidebar menu -->
+			<div class="bg-white sidebar">
+				<div class="menu"></div>
+			</div>
+
+			<!-- website content -->
+			<div id="content">
+				<a href="#" id="sidebar" class="bars">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
+
+		</div>
+
+		<!-- javascript library -->
+		<script src="node_modules/jquery/dist/jquery.slim.js"></script>
+		<script src="node_modules/popper.js/dist/popper.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script>
+			$(function() {
+				$('#sidebar').on('click', function() {
+					$('#wrapper').toggleClass('toggle');
+				});
+			});
+		</script>
+	</body>
+</html>

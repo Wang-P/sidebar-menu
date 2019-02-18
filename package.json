@@ -1,0 +1,17 @@
+{
+  "name": "css.ui.bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "css-ui-responsive-menu": "^3.1.6",
+    "popper.js": "^1.14.7",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
+  "license": "MIT"
+}
