@@ -10,12 +10,12 @@ body {
    ========================================================================== */
 .sidebar {
     min-height: 100vh;
-    margin-left: -15rem;
+    margin-left: -17rem;
     transition: margin .15s ease-out;
 }
 
 .sidebar .menu {
-    width: 15rem;
+    width: 17rem;
 }
 
 #wrapper.toggle .sidebar {
@@ -33,7 +33,7 @@ a#sidebar.bars i {
     }
 
     #wrapper.toggle .sidebar {
-	margin-left: -15rem;
+	margin-left: -17rem;
     }
 }
 
