@@ -1,0 +1,108 @@
+
+/* sidebar, author Zdeněk Papučík
+   ========================================================================== */
+.sidebar .title {
+    padding: 15px 20px 0 25px;
+}
+
+/* notice
+   ========================================================================== */
+.sidebar span.notice {
+    border-radius: 3px;
+    font-size: 0.75em;
+    margin-left: 30px;
+    padding: 0 8px;
+}
+
+.sidebar ul.menu {
+    height: 460px;
+    list-style: none;
+    padding: 0 25px;
+    font-size: 0.875em;
+}
+
+.sidebar ul.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul.menu li {
+    line-height: 32px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.sidebar ul.menu li span.name {
+    font-size: 0.875em;
+    text-transform: uppercase;
+}
+
+.sidebar ul.menu li ul li {
+    margin: 0;
+}
+
+.sidebar ul.menu li ul li a {
+    display: block;
+    margin-bottom: 2px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.sidebar ul.menu li ul li ul {
+    display: none;
+    margin: 15px 10px;
+    padding-left: 10px;
+}
+
+.sidebar ul.menu li ul li.parent a.employ:before {
+    float: right;
+    font-family: "FontAwesome";
+    margin: 0 3px 0 0;
+}
+
+.sidebar ul.menu li ul li.parent a.employ.up:before {
+    content: "\f106";
+}
+
+.sidebar ul.menu li ul li.parent a.employ.down:before {
+    content: "\f107";
+}
+
+.sidebar ul.menu li ul li.parent a.employ.transition:before {
+    transition: .3s all;
+}
+
+.sidebar ul.menu li ul li.parent a.employ.rotate:before {
+    transform: rotate(-180deg);
+}
+
+.sidebar ul.menu li ul li.parent a.employ.rotate.active:before {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+    .sidebar ul.menu {
+	height: 700px;
+    }
+}
+
+/* perfect scrollbar
+   ========================================================================== */
+.scrollbar {
+    position: relative;
+}
+
+.ps__thumb-y {
+    width: 5px;
+    border-radius: 0;
+}
+
+.ps__rail-y {
+    margin-top: 1px;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+    width: 5px;
+}
