@@ -45,18 +45,6 @@
     border-left: 2px solid #ebebeb;
 }
 
-/* notice
-   ========================================================================== */
-.bg-white.sidebar span.notice {
-    background: #fd3f5b;
-    color: #fff;
-}
-
-.bg-white.sidebar a.current span.notice {
-    background: #fff;
-    color: #494949;
-}
-
 /* perfect scrollbar
    ========================================================================== */
 .bg-white.sidebar .ps__thumb-y {
@@ -120,18 +108,6 @@
 
 .bg-dark.sidebar ul.menu li ul li ul {
     border-left: 2px solid #363c49;
-}
-
-/* notice
-   ========================================================================== */
-.bg-dark.sidebar span.notice {
-    background: #fd3f5b;
-    color: #fff;
-}
-
-.bg-dark.sidebar a.current span.notice {
-    background: #fd3f5b;
-    color: #fff;
 }
 
 /* perfect scrollbar

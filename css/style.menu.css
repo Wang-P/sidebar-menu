@@ -5,15 +5,6 @@
     padding: 15px 20px 0 25px;
 }
 
-/* notice
-   ========================================================================== */
-.sidebar span.notice {
-    border-radius: 3px;
-    font-size: 0.75em;
-    margin-left: 30px;
-    padding: 0 8px;
-}
-
 .sidebar ul.menu {
     height: 460px;
     list-style: none;
@@ -69,7 +60,7 @@
 }
 
 .sidebar ul.menu li ul li.parent a.employ.transition:before {
-    transition: .3s all;
+    transition: .2s all;
 }
 
 .sidebar ul.menu li ul li.parent a.employ.rotate:before {
