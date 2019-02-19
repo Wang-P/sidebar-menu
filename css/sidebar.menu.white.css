@@ -5,14 +5,6 @@
  * MIT License
 */
 
-/* sidebar title
-   ========================================================================== */
-.bg-white.sidebar .title {
-    color: #494949;
-    font-weight: 600;
-    border-bottom: 0.0625rem solid #f4f4f4;
-}
-
 /* sidebar list
    ========================================================================== */
 .bg-white.sidebar ul.menu li {
@@ -54,6 +46,22 @@
 }
 
 .bg-white.sidebar ul.menu li ul li.parent a.employ.active:before {
+    color: #494949;
+}
+
+/* sidebar menu button
+   ========================================================================== */
+a#sidebar.bars {
+    color: #c9c9c9;
+}
+
+a#sidebar.bars:hover {
+    color: #919191;
+}
+
+/* navbar
+   ========================================================================== */
+.navbar .navbar-title {
     color: #494949;
 }
 
