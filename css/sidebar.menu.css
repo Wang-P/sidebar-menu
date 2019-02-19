@@ -38,13 +38,14 @@
 /* sidebar menu button
    ========================================================================== */
 a#sidebar.bars {
-    color: #8c8c8c;
+    color: #c9c9c9;
     padding: 0.5rem;
-    font-size: 14px;
+    font-size: 21px;
+    display: block;
 }
 
 a#sidebar.bars:hover {
-    background: #fff;
+    color: #919191;
 }
 
 /* sidebar title
