@@ -121,14 +121,17 @@ body {
 }
 
 .sidebar ul.menu li ul li.parent a.employ.rotate.active:before {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }
 
 /* sidebar menu button
    ========================================================================== */
 a#sidebar.bars {
-    font-size: 1.3125rem;
+    font-size: 0.875rem;
+    margin-top: 0.0625rem;
     margin-left: 0.25rem;
+    padding: 0.25rem 0.625rem;
+    transition: 0.2s all;
 }
 
 /* website content
@@ -147,7 +150,7 @@ a#sidebar.bars {
 /* navbar
    ========================================================================== */
 .navbar .navbar-title {
-    margin-left: 0.5rem;
+    margin-left: 0.625rem;
 }
 
 /* custom perfect scrollbar style
