@@ -1,10 +1,18 @@
 
-/* sidebar, author Zdeněk Papučík
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+
+/* sidebar title
    ========================================================================== */
 .sidebar .title {
     padding: 15px 20px 0 25px;
 }
 
+/* sidebar list
+   ========================================================================== */
 .sidebar ul.menu {
     height: 460px;
     list-style: none;
@@ -12,13 +20,8 @@
     font-size: 0.875em;
 }
 
-.sidebar ul.menu ul {
-    list-style: none;
-    padding: 0;
-}
-
 .sidebar ul.menu li {
-    line-height: 32px;
+    line-height: 33px;
     margin-top: 10px;
     padding: 0;
 }
@@ -28,15 +31,13 @@
     text-transform: uppercase;
 }
 
-.sidebar ul.menu li ul li {
-    margin: 0;
+.sidebar ul.menu li ul {
+    list-style: none;
+    padding: 0;
 }
 
-.sidebar ul.menu li ul li a {
-    display: block;
-    margin-bottom: 2px;
-    padding: 0 10px;
-    text-decoration: none;
+.sidebar ul.menu li ul li {
+    margin: 0;
 }
 
 .sidebar ul.menu li ul li ul {
@@ -45,12 +46,23 @@
     padding-left: 10px;
 }
 
+/* sidebar hyperlink
+   ========================================================================== */
+.sidebar ul.menu li ul li a {
+    display: block;
+    margin-bottom: 2px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
 .sidebar ul.menu li ul li.parent a.employ:before {
     float: right;
     font-family: "FontAwesome";
     margin: 0 3px 0 0;
 }
 
+/* sidebar hyperlink icon
+   ========================================================================== */
 .sidebar ul.menu li ul li.parent a.employ.up:before {
     content: "\f106";
 }
@@ -60,7 +72,7 @@
 }
 
 .sidebar ul.menu li ul li.parent a.employ.transition:before {
-    transition: .2s all;
+    transition: 0.2s all;
 }
 
 .sidebar ul.menu li ul li.parent a.employ.rotate:before {
@@ -73,11 +85,11 @@
 
 @media (min-width: 768px) {
     .sidebar ul.menu {
-	height: 700px;
+	height: 800px;
     }
 }
 
-/* perfect scrollbar
+/* custom perfect scrollbar style
    ========================================================================== */
 .scrollbar {
     position: relative;
