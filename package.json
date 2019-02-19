@@ -1,17 +1,16 @@
 {
-  "name": "css.ui.bootstrap",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "css-ui-responsive-menu": "^3.1.6",
-    "popper.js": "^1.14.7",
-    "bootstrap": "^4.3.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
-  "license": "MIT"
+	"name": "sidebar.menu.bootstrap",
+	"version": "1.0.0",
+	"description": "Sidebar menu for Bootstrap 4",
+	"main": "",
+	"dependencies": {
+		"bootstrap": "^4.3.1",
+		"popper.js": "^1.14.7",
+		"jquery": "^3.3.1",
+		"open-sans-fontface": "^1.4.0",
+		"font-awesome": "^4.7.0",
+		"perfect-scrollbar": "^1.4.0"
+	},
+	"author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
+	"license": "MIT"
 }
