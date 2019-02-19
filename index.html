@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-	    <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-	    <link rel="stylesheet" href="css/style.css">
-	    <title>Sidebar toogle menu for Bootstrap 4</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="node_modules/open-sans-fontface/open-sans.css">
+		<link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+		<link rel="stylesheet" href="css/sidebar.menu.css">
+		<link rel="stylesheet" href="css/sidebar.menu.white.css">
+		<title>Sidebar toggle menu for Bootstrap 4</title>
 	</head>
 	<body>
 		<div class="d-flex" id="wrapper">
@@ -26,15 +29,10 @@
 		</div>
 
 		<!-- javascript library -->
-		<script src="node_modules/jquery/dist/jquery.slim.js"></script>
-		<script src="node_modules/popper.js/dist/popper.js"></script>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-		<script>
-			$(function() {
-				$('#sidebar').on('click', function() {
-					$('#wrapper').toggleClass('toggle');
-				});
-			});
-		</script>
+		<script src="node_modules/popper.js/dist/popper.js"></script>
+		<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+		<script src="js/sidebar.menu.js"></script>
 	</body>
 </html>
