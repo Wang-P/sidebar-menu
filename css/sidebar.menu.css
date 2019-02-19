@@ -85,7 +85,7 @@ a#sidebar.bars:hover {
 
 .sidebar ul.menu li ul li ul {
     display: none;
-    margin: 0.9375rem 0.625rem;
+    margin: 0.9375rem 0 0.9375rem 0.625rem;
     padding-left: 0.625rem;
 }
 
