@@ -100,6 +100,13 @@ a#sidebar.bars:hover {
 
 .sidebar ul.menu li ul li a i {
     margin-right: 0.625rem;
+    opacity: 0.3;
+}
+
+.sidebar ul.menu li ul li a:hover i {
+    transition: 0.5s all;
+    transform: rotate(360deg);
+    opacity: 1;
 }
 
 .sidebar ul.menu li ul li.parent a.employ:before {
