@@ -19,13 +19,13 @@
 }
 
 .bg-white.sidebar ul.menu li ul li ul {
-    border-left: 1px solid #ebebeb;
+    border-left: 0.0625rem solid #ebebeb;
 }
 
 /* sidebar hyperlink
    ========================================================================== */
 .bg-white.sidebar ul.menu li ul li a {
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     color: #494949;
 }
 
