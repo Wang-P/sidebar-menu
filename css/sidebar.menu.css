@@ -5,6 +5,12 @@
  * MIT License
 */
 
+/* elements style
+   ========================================================================== */
+body {
+    overflow: hidden;
+}
+
 /* sidebar menu
    ========================================================================== */
 .sidebar {
@@ -63,13 +69,13 @@ a#sidebar.bars:hover {
 }
 
 .sidebar ul.menu li {
-    line-height: 2.0625rem;
+    line-height: 2.125rem;
     margin-top: 0.625rem;
     padding: 0;
 }
 
 .sidebar ul.menu li span.name {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
 }
 
