@@ -6,7 +6,7 @@
 */
 (function($) {
 
-	// togle sidebar menu
+	// toggle sidebar menu
 	$('#sidebar').on('click', function() {
 		$('#wrapper').toggleClass('toggle');
 	});
