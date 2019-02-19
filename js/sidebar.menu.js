@@ -1,8 +1,9 @@
 
-/*
- * Responsive menu.
- * @author Zdeněk Papučík
- */
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
 (function($) {
 
 	// togle sidebar menu
