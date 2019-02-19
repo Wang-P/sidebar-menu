@@ -10,6 +10,7 @@
 .bg-white.sidebar .title {
     color: #494949;
     font-weight: 600;
+    border-bottom: 0.0625rem solid #f4f4f4;
 }
 
 /* sidebar list
