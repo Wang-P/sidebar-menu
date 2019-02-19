@@ -40,7 +40,7 @@
 a#sidebar.bars {
     color: #c9c9c9;
     padding: 0.5rem;
-    font-size: 21px;
+    font-size: 1.3125rem;
     display: block;
 }
 
@@ -51,32 +51,26 @@ a#sidebar.bars:hover {
 /* sidebar title
    ========================================================================== */
 .sidebar .title {
-    padding: 15px 20px 0 25px;
+    padding: 0.9375rem 1.25rem 0 1.5625rem;
 }
 
 /* sidebar list
    ========================================================================== */
 .sidebar ul.menu {
-    height: 460px;
+    max-height: 80vh;
     list-style: none;
-    padding: 0 25px;
-    font-size: 0.875em;
-}
-
-@media (min-width: 768px) {
-    .sidebar ul.menu {
-	height: 800px;
-    }
+    padding: 0 1.25rem;
+    font-size: 0.875rem;
 }
 
 .sidebar ul.menu li {
-    line-height: 33px;
-    margin-top: 10px;
+    line-height: 2.0625rem;
+    margin-top: 0.625rem;
     padding: 0;
 }
 
 .sidebar ul.menu li span.name {
-    font-size: 0.875em;
+    font-size: 0.875rem;
     text-transform: uppercase;
 }
 
@@ -91,23 +85,27 @@ a#sidebar.bars:hover {
 
 .sidebar ul.menu li ul li ul {
     display: none;
-    margin: 15px 10px;
-    padding-left: 10px;
+    margin: 0.9375rem 0.625rem;
+    padding-left: 0.625rem;
 }
 
 /* sidebar hyperlink
    ========================================================================== */
 .sidebar ul.menu li ul li a {
     display: block;
-    margin-bottom: 2px;
-    padding: 0 10px;
+    margin-bottom: 0.125rem;
+    padding: 0 0.625rem;
     text-decoration: none;
+}
+
+.sidebar ul.menu li ul li a i {
+    margin-right: 0.625rem;
 }
 
 .sidebar ul.menu li ul li.parent a.employ:before {
     float: right;
     font-family: "FontAwesome";
-    margin: 0 3px 0 0;
+    margin: 0 0.1875rem 0 0;
 }
 
 /* sidebar hyperlink icon
@@ -152,16 +150,16 @@ a#sidebar.bars:hover {
 }
 
 .ps__thumb-y {
-    width: 5px;
+    width: 0.3125rem;
     border-radius: 0;
 }
 
 .ps__rail-y {
-    margin-top: 1px;
+    margin-top: 0.0625rem;
 }
 
 .ps__rail-y:hover > .ps__thumb-y,
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
-    width: 5px;
+    width: 0.3125rem;
 }
