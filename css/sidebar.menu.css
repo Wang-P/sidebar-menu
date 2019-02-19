@@ -5,6 +5,48 @@
  * MIT License
 */
 
+/* sidebar menu
+   ========================================================================== */
+.sidebar {
+    min-height: 100vh;
+    margin-left: -17rem;
+    transition: margin 0.15s ease-out;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+	margin-left: 0;
+    }
+}
+
+.sidebar .menu {
+    width: 17rem;
+}
+
+/* sidebar menu toggle
+   ========================================================================== */
+#wrapper.toggle .sidebar {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #wrapper.toggle .sidebar {
+	margin-left: -17rem;
+    }
+}
+
+/* sidebar menu button
+   ========================================================================== */
+a#sidebar.bars {
+    color: #8c8c8c;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+a#sidebar.bars:hover {
+    background: #fff;
+}
+
 /* sidebar title
    ========================================================================== */
 .sidebar .title {
@@ -18,6 +60,12 @@
     list-style: none;
     padding: 0 25px;
     font-size: 0.875em;
+}
+
+@media (min-width: 768px) {
+    .sidebar ul.menu {
+	height: 800px;
+    }
 }
 
 .sidebar ul.menu li {
@@ -83,9 +131,16 @@
     transform: rotate(180deg);
 }
 
+/* website content
+   ========================================================================== */
+.content {
+    min-width: 100vw;
+}
+
 @media (min-width: 768px) {
-    .sidebar ul.menu {
-	height: 800px;
+    .content {
+	min-width: 0;
+	width: 100%;
     }
 }
 
