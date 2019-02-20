@@ -5,6 +5,18 @@
  * MIT License
 */
 
+/* sidebar bg
+   ========================================================================== */
+.bg-white {
+    background: #fff;
+}
+
+/* sidebar border top
+   ========================================================================== */
+.bg-white.border-sidebar-top {
+    border-top: 1px #f4f4f4 solid;
+}
+
 /* sidebar list
    ========================================================================== */
 .bg-white.sidebar ul.menu li {

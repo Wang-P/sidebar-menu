@@ -17,6 +17,7 @@ body {
     min-height: 100vh;
     margin-left: -17rem;
     transition: margin 0.15s ease-out;
+    margin-top: 3.5rem;
 }
 
 @media (min-width: 768px) {
