@@ -61,7 +61,7 @@ a#sidebar.bars:hover {
 
 /* navbar
    ========================================================================== */
-.navbar .navbar-title {
+.navbar a.navbar-title {
     color: #494949;
 }
 
