@@ -5,22 +5,22 @@
  * MIT License
 */
 
-/* sidebar bg
+/* bg website
    ========================================================================== */
-.bg-dark-2 {
-    background: #1d222c;
+body {
+    background: #f4f4f4;
 }
 
-/* sidebar border top
+/* sidebar bg
    ========================================================================== */
-.bg-dark-2.border-sidebar-top {
-    border-top: 1px #2e3543 solid;
+.bg-dark-2.sidebar {
+    background: #1d222c;
 }
 
 /* sidebar list
    ========================================================================== */
 .bg-dark-2.sidebar ul.menu li {
-    color: #b5bac3;
+    color: #8a8a8a;
 }
 
 .bg-dark-2.sidebar ul.menu li ul li ul {
@@ -61,32 +61,44 @@
     color: #b9b9b9;
 }
 
+/* navbar bg
+   ========================================================================== */
+.bg-dark-2.navbar {
+    background: #f4f4f4;
+}
+
 /* sidebar menu button
    ========================================================================== */
 .bg-dark-2 a#sidebar.bars {
-    color: #47505e;
+    color: #c9c9c9;
 }
 
 .bg-dark-2 a#sidebar.bars:hover {
-    color: #5e6a7c;
+    color: #919191;
 }
 
 /* navbar title
    ========================================================================== */
 .bg-dark-2.navbar a.navbar-title {
-    color: #eaedf1;
+    color: #494949;
+}
+
+/* website content
+   ========================================================================== */
+.content .box {
+    color: #494949;
 }
 
 /* custom perfect scrollbar style
    ========================================================================== */
 .bg-dark-2.sidebar .ps__thumb-y {
-    background: #586173;
+    background: #e0e0e0;
 }
 
 .bg-dark-2.sidebar .ps__rail-y:hover > .bg-dark-2.sidebar .ps__thumb-y,
 .bg-dark-2.sidebar .ps__rail-y:focus > .bg-dark-2.sidebar .ps__thumb-y,
 .bg-dark-2.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
-    background: #586173;
+    background: #e0e0e0;
 }
 
 .bg-dark-2.sidebar .ps .ps__rail-y:hover,

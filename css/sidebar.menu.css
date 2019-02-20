@@ -9,15 +9,14 @@
    ========================================================================== */
 body {
     overflow-x: hidden;
-    margin-top: 3.125rem;
-    background: #f4f4f4;
+    margin-top: 3.5625rem;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* sidebar menu
    ========================================================================== */
 .sidebar {
-    min-height: calc(100vh - 3.125rem);
+    min-height: calc(100vh - 3.5625rem);
     transition: margin 0.15s ease-out;
     border-top-right-radius: 0.1875rem;
     margin-left: -17rem;
@@ -153,6 +152,7 @@ a#sidebar.bars {
     padding: 1.25rem;
     margin-bottom: 1.25rem;
     border-radius: 0.1875rem;
+    font-size: 0.875rem;
 }
 
 /* navbar
@@ -169,7 +169,6 @@ a#sidebar.bars {
 
 .ps__thumb-y {
     width: 0.3125rem;
-    border-radius: 0;
 }
 
 .ps__rail-y {

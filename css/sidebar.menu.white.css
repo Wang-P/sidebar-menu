@@ -5,95 +5,104 @@
  * MIT License
 */
 
-/* sidebar bg
+/* bg website
    ========================================================================== */
-.bg-white-2 {
+body {
     background: #f4f4f4;
 }
 
-/* sidebar border top
+/* sidebar bg
    ========================================================================== */
-.bg-white.border-sidebar-top {
-    border-top: 1px #f4f4f4 solid;
+.bg-white-2.sidebar {
+    background: #fff;
 }
 
 /* sidebar list
    ========================================================================== */
-.bg-white.sidebar ul.menu li {
+.bg-white-2.sidebar ul.menu li {
     color: #8a8a8a;
 }
 
-.bg-white.sidebar ul.menu li ul li ul {
+.bg-white-2.sidebar ul.menu li ul li ul {
     border-left: 0.0625rem solid #ebebeb;
 }
 
 /* sidebar hyperlink
    ========================================================================== */
-.bg-white.sidebar ul.menu li ul li a {
+.bg-white-2.sidebar ul.menu li ul li a {
     border-radius: 0.1875rem;
     color: #494949;
 }
 
-.bg-white.sidebar ul.menu li ul li a:hover {
+.bg-white-2.sidebar ul.menu li ul li a:hover {
     background: #f4f4f4;
 
 }
 
-.bg-white.sidebar ul.menu li ul li a.current {
+.bg-white-2.sidebar ul.menu li ul li a.current {
     background: #f4f4f4;
 }
 
-.bg-white.sidebar ul.menu li ul li.parent a.current {
+.bg-white-2.sidebar ul.menu li ul li.parent a.current {
     background: #f4f4f4;
 }
 
-.bg-white.sidebar ul.menu li ul li.parent .submenu a.current {
+.bg-white-2.sidebar ul.menu li ul li.parent .submenu a.current {
     background: #f4f4f4;
 }
 
 /* sidebar hyperlink icon
    ========================================================================== */
-.bg-white.sidebar ul.menu li ul li.parent a.employ:before {
+.bg-white-2.sidebar ul.menu li ul li.parent a.employ:before {
     color: #b9b9b9;
 }
 
-.bg-white.sidebar ul.menu li ul li.parent a.employ.active:before {
+.bg-white-2.sidebar ul.menu li ul li.parent a.employ.active:before {
     color: #494949;
+}
+
+/* navbar bg
+   ========================================================================== */
+.bg-white-2.navbar {
+    background: #f4f4f4;
 }
 
 /* sidebar menu button
    ========================================================================== */
-.bg-white a#sidebar.bars,
 .bg-white-2 a#sidebar.bars {
     color: #c9c9c9;
 }
 
-.bg-white a#sidebar.bars:hover,
 .bg-white-2 a#sidebar.bars:hover {
     color: #919191;
 }
 
 /* navbar title
    ========================================================================== */
-.bg-white.navbar a.navbar-title,
 .bg-white-2.navbar a.navbar-title {
+    color: #494949;
+}
+
+/* website content
+   ========================================================================== */
+.content .box {
     color: #494949;
 }
 
 /* custom perfect scrollbar style
    ========================================================================== */
-.bg-white.sidebar .ps__thumb-y {
+.bg-white-2.sidebar .ps__thumb-y {
     background: #e0e0e0;
 }
 
-.bg-white.sidebar .ps__rail-y:hover > .bg-white.sidebar .ps__thumb-y,
-.bg-white.sidebar .ps__rail-y:focus > .bg-white.sidebar .ps__thumb-y,
-.bg-white.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
+.bg-white-2.sidebar .ps__rail-y:hover > .bg-white-2.sidebar .ps__thumb-y,
+.bg-white-2.sidebar .ps__rail-y:focus > .bg-white-2.sidebar .ps__thumb-y,
+.bg-white-2.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
     background: #e0e0e0;
 }
 
-.bg-white.sidebar .ps .ps__rail-y:hover,
-.bg-white.sidebar .ps .ps__rail-y:focus,
-.bg-white.sidebar .ps .ps__rail-y.ps--clicking {
+.bg-white-2.sidebar .ps .ps__rail-y:hover,
+.bg-white-2.sidebar .ps .ps__rail-y:focus,
+.bg-white-2.sidebar .ps .ps__rail-y.ps--clicking {
     background: none;
 }
