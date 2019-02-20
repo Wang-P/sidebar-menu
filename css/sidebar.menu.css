@@ -18,8 +18,9 @@ body {
    ========================================================================== */
 .sidebar {
     min-height: calc(100vh - 3.125rem);
-    margin-left: -17rem;
     transition: margin 0.15s ease-out;
+    border-top-right-radius: 0.1875rem;
+    margin-left: -17rem;
 }
 
 @media (min-width: 768px) {
@@ -146,6 +147,12 @@ a#sidebar.bars {
 	min-width: 0;
 	width: 100%;
     }
+}
+
+.content .box {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.1875rem;
 }
 
 /* navbar
