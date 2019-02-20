@@ -3,7 +3,7 @@
 
 Sidebar menu based on bootstrap 4
 
-##Installation
+## Installation
 
 ```
 npm i sidebar.menu.bootstrap
