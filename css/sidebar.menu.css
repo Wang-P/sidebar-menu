@@ -146,6 +146,10 @@ a#sidebar.bars {
     }
 }
 
+.content .container-fluid {
+    margin-top: 3.75rem;
+}
+
 /* navbar
    ========================================================================== */
 .navbar .navbar-title {
