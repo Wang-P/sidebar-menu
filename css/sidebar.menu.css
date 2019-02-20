@@ -8,16 +8,18 @@
 /* elements style
    ========================================================================== */
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    margin-top: 3.125rem;
+    background: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* sidebar menu
    ========================================================================== */
 .sidebar {
-    min-height: 100vh;
+    min-height: calc(100vh - 3.125rem);
     margin-left: -17rem;
     transition: margin 0.15s ease-out;
-    margin-top: 3.5rem;
 }
 
 @media (min-width: 768px) {
@@ -144,10 +146,6 @@ a#sidebar.bars {
 	min-width: 0;
 	width: 100%;
     }
-}
-
-.content .container-fluid {
-    margin-top: 3.75rem;
 }
 
 /* navbar

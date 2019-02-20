@@ -7,8 +7,8 @@
 
 /* sidebar bg
    ========================================================================== */
-.bg-white {
-    background: #fff;
+.bg-white-2 {
+    background: #f4f4f4;
 }
 
 /* sidebar border top
@@ -63,17 +63,20 @@
 
 /* sidebar menu button
    ========================================================================== */
-.bg-white a#sidebar.bars {
+.bg-white a#sidebar.bars,
+.bg-white-2 a#sidebar.bars {
     color: #c9c9c9;
 }
 
-.bg-white a#sidebar.bars:hover {
+.bg-white a#sidebar.bars:hover,
+.bg-white-2 a#sidebar.bars:hover {
     color: #919191;
 }
 
 /* navbar title
    ========================================================================== */
-.bg-white.navbar a.navbar-title {
+.bg-white.navbar a.navbar-title,
+.bg-white-2.navbar a.navbar-title {
     color: #494949;
 }
 
