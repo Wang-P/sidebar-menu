@@ -1,15 +1,27 @@
 {
 	"name": "sidebar.menu.bootstrap",
 	"version": "1.0.0",
-	"description": "Sidebar menu for Bootstrap 4",
+	"description": "Sidebar menu based on bootstrap 4",
 	"main": "",
 	"dependencies": {
 		"bootstrap": "^4.3.1",
+		"popper.js": "^1.14.7",
 		"jquery": "^3.3.1",
 		"open-sans-fontface": "^1.4.0",
 		"font-awesome": "^4.7.0",
 		"perfect-scrollbar": "^1.4.0"
 	},
 	"author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
-	"license": "MIT"
+	"license": "MIT",
+	"keywords": [
+		"sidebar"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://accgit@github.com/accgit/sidebar-menu.git"
+	},
+	"bugs": {
+		"url": "https://github.com/accgit/sidebar-menu/issues"
+	},
+	"homepage": "https://github.com/accgit/sidebar-menu#readme"
 }
