@@ -124,7 +124,7 @@ body {
 }
 
 .sidebar ul.menu li ul li.parent a.employ.rotate.active:before {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 /* sidebar menu button
