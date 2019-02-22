@@ -14,6 +14,7 @@ or
 ```
 npm i sidebar.skeleton.bootstrap
 ```
+And modify the paths to CSS and JS in the html document.
 
 ## Built on
 
