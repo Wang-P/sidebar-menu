@@ -8,3 +8,5 @@ Sidebar menu based on bootstrap 4
 ```
 npm i sidebar.menu.bootstrap
 ```
+
+## DEV version !
