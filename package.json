@@ -1,6 +1,6 @@
 {
 	"name": "sidebar.skeleton.bootstrap",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Sidebar menu skeleton for dashboard based on bootstrap 4",
 	"main": "",
 	"dependencies": {
@@ -9,7 +9,8 @@
 		"jquery": "^3.3.1",
 		"open-sans-fontface": "^1.4.0",
 		"font-awesome": "^4.7.0",
-		"perfect-scrollbar": "^1.4.0"
+		"perfect-scrollbar": "^1.4.0",
+		"nanobar": "^0.4.2"
 	},
 	"author": "Zdeněk Papučík <zdenek.papucik@gmail.com>",
 	"license": "MIT",

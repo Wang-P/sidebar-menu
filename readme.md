@@ -9,12 +9,16 @@ Sidebar menu is simple and fast skeleton for dashboard based on bootstrap 4
 git clone https://github.com/accgit/sidebar-menu.git path/to/dir
 npm install
 ```
+
 or
 
 ```
 npm i sidebar.skeleton.bootstrap
 ```
-And modify the paths to CSS and JS in the html document.
+
+And modify the paths to CSS and JS in the html document. Or, we can use the
+[pre-prepared project](https://github.com/accgit/sidebar-menu-project)
+with Grunt to install and minify CSS and JS.
 
 ## Built on
 
@@ -23,6 +27,7 @@ And modify the paths to CSS and JS in the html document.
 - Font Awesome 4.7
 - Perfect scrollbar 1.4
 - Open Sans @font-face kit
+- Nanobar
 
 ## Two basic theme for sidebar and dropdown menu
 

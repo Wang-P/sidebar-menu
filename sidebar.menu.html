@@ -16,7 +16,7 @@
 		<div class="d-flex" id="wrapper">
 
 			<!-- sidebar menu -->
-			<div class="sidebar bg-dark-menu">
+			<div class="sidebar bg-white-menu">
 				<div class="menu">
 
 					<!-- menu -->
@@ -165,10 +165,13 @@
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 		<script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.js"></script>
+		<script src="node_modules/nanobar/nanobar.js"></script>
 		<script src="js/sidebar.menu.js"></script>
 		<script>
 			$(function() {
 				new PerfectScrollbar('.scrollbar');
+				var nanobar = new Nanobar();
+				nanobar.go(100);
 			});
 		</script>
 	</body>

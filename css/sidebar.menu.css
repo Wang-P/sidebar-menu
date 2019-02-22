@@ -212,6 +212,21 @@ ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
     opacity: 1;
 }
 
+/* nanobar
+   ========================================================================== */
+.nanobar {
+    height: 2px;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nanobar .bar {
+    height: 100%;
+    transition: height .3s;
+    width: 0;
+}
+
 /* custom perfect scrollbar style
    ========================================================================== */
 .scrollbar {

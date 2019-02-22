@@ -133,6 +133,12 @@ body {
     background: none;
 }
 
+/* nanobar
+   ========================================================================== */
+.nanobar .bar {
+    background: #4b4b4b;
+}
+
 /* custom perfect scrollbar style
    ========================================================================== */
 .bg-white-menu.sidebar .ps__thumb-y {
