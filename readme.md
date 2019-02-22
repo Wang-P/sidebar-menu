@@ -21,26 +21,26 @@ npm i sidebar.skeleton.bootstrap
 
 White color for sidebar.
 
-```
-.bg-white-menu
+```html
+<div class="sidebar bg-white-menu">
 ```
 
 White color for dropdown.
 
-```
-.bg-white-dropdown
+```html
+<div class="collapse navbar-collapse bg-white-dropdown">
 ```
 
 Dark color for sidebar.
 
-```
-.bg-dark-menu
+```html
+<div class="sidebar bg-dark-menu">
 ```
 
 Dark color for dropdown.
 
-```
-.bg-Dark-dropdown
+```html
+<div class="collapse navbar-collapse bg-dark-dropdown">
 ```
 
 **We do not change the color of Navbar.**
