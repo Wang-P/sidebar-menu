@@ -1,7 +1,7 @@
 {
-	"name": "sidebar.skeleton.bootstrap",
-	"version": "1.0.2",
-	"description": "Sidebar menu skeleton for dashboard based on bootstrap 4",
+	"name": "sidebar-menu-accgit",
+	"version": "1.0.0",
+	"description": "Sidebar menu is simple and fast template for dashboard on bootstrap 4",
 	"main": "",
 	"dependencies": {
 		"bootstrap": "^4.3.1",

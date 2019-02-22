@@ -1,7 +1,7 @@
 
 ## Sidebar menu on bootstrap 4
 
-Sidebar menu is simple and fast skeleton for dashboard based on bootstrap 4
+Sidebar menu is simple and fast template for dashboard on bootstrap 4
 
 ## Installation
 
@@ -13,7 +13,7 @@ npm install
 or
 
 ```
-npm i sidebar.skeleton.bootstrap
+npm i sidebar-menu-accgit
 ```
 
 And modify the paths to CSS and JS in the html document. Or, we can use the
