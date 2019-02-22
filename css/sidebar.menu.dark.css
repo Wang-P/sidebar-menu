@@ -114,13 +114,13 @@ body {
 /* custom perfect scrollbar style
    ========================================================================== */
 .bg-dark-menu.sidebar .ps__thumb-y {
-    background: #e0e0e0;
+    background: #586173;
 }
 
 .bg-dark-menu.sidebar .ps__rail-y:hover > .bg-dark-menu.sidebar .ps__thumb-y,
 .bg-dark-menu.sidebar .ps__rail-y:focus > .bg-dark-menu.sidebar .ps__thumb-y,
 .bg-dark-menu.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
-    background: #e0e0e0;
+    background: #586173;
 }
 
 .bg-dark-menu.sidebar .ps .ps__rail-y:hover,
