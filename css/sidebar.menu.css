@@ -66,6 +66,7 @@ body {
 
 .sidebar ul.menu li ul {
     list-style: none;
+    overflow: hidden;
     padding: 0;
 }
 
