@@ -1,7 +1,7 @@
 
 /*!
  * Sidebar menu for Bootstrap 4
- * Copyright ZdenÄ›k PapuÄÃ­k
+ * Copyright Zdenìk Papuèík
  * MIT License
 */
 
@@ -13,73 +13,73 @@ body {
 
 /* sidebar bg
    ========================================================================== */
-.bg-white-2.sidebar {
+.bg-white-menu.sidebar {
     background: #fff;
 }
 
 /* sidebar list
    ========================================================================== */
-.bg-white-2.sidebar ul.menu li {
+.bg-white-menu.sidebar ul.menu li {
     color: #8a8a8a;
 }
 
-.bg-white-2.sidebar ul.menu li ul li ul {
+.bg-white-menu.sidebar ul.menu li ul li ul {
     border-left: 0.0625rem solid #ebebeb;
 }
 
 /* sidebar hyperlink
    ========================================================================== */
-.bg-white-2.sidebar ul.menu li ul li a {
+.bg-white-menu.sidebar ul.menu li ul li a {
     border-radius: 0.1875rem;
     color: #494949;
 }
 
-.bg-white-2.sidebar ul.menu li ul li a:hover {
+.bg-white-menu.sidebar ul.menu li ul li a:hover {
     background: #f4f4f4;
 
 }
 
-.bg-white-2.sidebar ul.menu li ul li a.current {
+.bg-white-menu.sidebar ul.menu li ul li a.current {
     background: #f4f4f4;
 }
 
-.bg-white-2.sidebar ul.menu li ul li.parent a.current {
+.bg-white-menu.sidebar ul.menu li ul li.parent a.current {
     background: #f4f4f4;
 }
 
-.bg-white-2.sidebar ul.menu li ul li.parent .submenu a.current {
+.bg-white-menu.sidebar ul.menu li ul li.parent .submenu a.current {
     background: #f4f4f4;
 }
 
 /* sidebar hyperlink icon
    ========================================================================== */
-.bg-white-2.sidebar ul.menu li ul li.parent a.employ:before {
+.bg-white-menu.sidebar ul.menu li ul li.parent a.employ:before {
     color: #b9b9b9;
 }
 
-.bg-white-2.sidebar ul.menu li ul li.parent a.employ.active:before {
+.bg-white-menu.sidebar ul.menu li ul li.parent a.employ.active:before {
     color: #494949;
 }
 
-/* navbar bg
+/* navbar bg (dont change color)
    ========================================================================== */
-.bg-white-2.navbar {
+.bg-white-navbar.navbar {
     background: #f4f4f4;
 }
 
 /* sidebar menu button
    ========================================================================== */
-.bg-white-2 a#sidebar.bars {
+.bg-white-navbar a#sidebar.bars {
     color: #c9c9c9;
 }
 
-.bg-white-2 a#sidebar.bars:hover {
+.bg-white-navbar a#sidebar.bars:hover {
     color: #919191;
 }
 
 /* navbar title
    ========================================================================== */
-.bg-white-2.navbar a.navbar-title {
+.bg-white-navbar.navbar a.navbar-title {
     color: #494949;
 }
 
@@ -89,63 +89,64 @@ body {
     color: #494949;
 }
 
-/* navbar user nav icon
+/* navbar user dropdown nav icon
    ========================================================================== */
-ul.navbar-nav li i {
-    color: #c9c9c9;
+.bg-white-dropdown ul.navbar-nav li i {
+    color: #494949;
 }
 
 /* navbar user dropdown toggle
    ========================================================================== */
-ul.navbar-nav li a.toggle {
+.bg-white-dropdown ul.navbar-nav li a.toggle {
     color: #494949;
 }
 
-ul.navbar-nav li a.toggle:before {
+.bg-white-dropdown ul.navbar-nav li a.toggle:before {
     color: #c9c9c9;
 }
 
 /* navbar user dropdown menu
    ========================================================================== */
-ul.navbar-nav li ul.dropdown-menu {
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu {
     border-color: transparent;
     background: #f4f4f4;
 }
 
 /* navbar user dropdown menu icon
    ========================================================================== */
-ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
     color: #494949;
 }
 
 /* navbar user dropdown menu hyperlink
    ========================================================================== */
-ul.navbar-nav li ul.dropdown-menu li a {
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu li a {
     color: #494949;
 }
 
-ul.navbar-nav li ul.dropdown-menu li a:hover {
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu li a:hover {
     color: #494949;
+    background: #fdfdfd;
 }
 
-ul.navbar-nav li ul.dropdown-menu li a:active {
+.bg-white-dropdown ul.navbar-nav li ul.dropdown-menu li a:active {
     background: none;
 }
 
 /* custom perfect scrollbar style
    ========================================================================== */
-.bg-white-2.sidebar .ps__thumb-y {
+.bg-white-menu.sidebar .ps__thumb-y {
     background: #e0e0e0;
 }
 
-.bg-white-2.sidebar .ps__rail-y:hover > .bg-white-2.sidebar .ps__thumb-y,
-.bg-white-2.sidebar .ps__rail-y:focus > .bg-white-2.sidebar .ps__thumb-y,
-.bg-white-2.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
+.bg-white-menu.sidebar .ps__rail-y:hover > .bg-white-menu.sidebar .ps__thumb-y,
+.bg-white-menu.sidebar .ps__rail-y:focus > .bg-white-menu.sidebar .ps__thumb-y,
+.bg-white-menu.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
     background: #e0e0e0;
 }
 
-.bg-white-2.sidebar .ps .ps__rail-y:hover,
-.bg-white-2.sidebar .ps .ps__rail-y:focus,
-.bg-white-2.sidebar .ps .ps__rail-y.ps--clicking {
+.bg-white-menu.sidebar .ps .ps__rail-y:hover,
+.bg-white-menu.sidebar .ps .ps__rail-y:focus,
+.bg-white-menu.sidebar .ps .ps__rail-y.ps--clicking {
     background: none;
 }

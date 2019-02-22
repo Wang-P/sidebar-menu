@@ -14,7 +14,9 @@
 	"author": "Zdenìk Papuèík <zdenek.papucik@gmail.com>",
 	"license": "MIT",
 	"keywords": [
-		"sidebar"
+		"sidebar",
+		"bootstrap",
+		"dashboard"
 	],
 	"repository": {
 		"type": "git",

@@ -1,7 +1,7 @@
 
 /*!
  * Sidebar menu for Bootstrap 4
- * Copyright Zdenƒõk Papuƒç√≠k
+ * Copyright ZdenÏk PapuËÌk
  * MIT License
 */
 
@@ -172,11 +172,12 @@ ul.navbar-nav li img {
     float: left;
 }
 
-/* navbar user nav icon
+/* navbar user dropdown nav icon
    ========================================================================== */
 ul.navbar-nav li i {
     font-size: 0.875rem;
     transition: 0.5s all;
+    opacity: 0.3;
 }
 
 /* navbar user dropdown toggle
@@ -204,6 +205,10 @@ ul.navbar-nav li ul.dropdown-menu.dropdown-menu-right {
    ========================================================================== */
 ul.navbar-nav li ul.dropdown-menu a.dropdown-item i {
     min-width: 1.375rem;
+}
+
+ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
+    opacity: 1;
 }
 
 /* custom perfect scrollbar style

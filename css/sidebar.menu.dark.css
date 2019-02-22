@@ -1,0 +1,130 @@
+
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdeněk Papučík
+ * MIT License
+*/
+
+/* bg website
+   ========================================================================== */
+body {
+    background: #f4f4f4;
+}
+
+/* sidebar bg
+   ========================================================================== */
+.bg-dark-menu.sidebar {
+    background: #1d222c;
+}
+
+/* sidebar list
+   ========================================================================== */
+.bg-dark-menu.sidebar ul.menu li {
+    color: #b5bac3;
+}
+
+.bg-dark-menu.sidebar ul.menu li ul li ul {
+    border-left: 0.0625rem solid #2e3543 ;
+}
+
+/* sidebar hyperlink
+   ========================================================================== */
+.bg-dark-menu.sidebar ul.menu li ul li a {
+    border-radius: 0.1875rem;
+    color: #eaedf1;
+}
+
+.bg-dark-menu.sidebar ul.menu li ul li a:hover {
+    background: #363c49;
+
+}
+
+.bg-dark-menu.sidebar ul.menu li ul li a.current {
+    background: #363c49;
+}
+
+.bg-dark-menu.sidebar ul.menu li ul li.parent a.current {
+    background: #363c49;
+}
+
+.bg-dark-menu.sidebar ul.menu li ul li.parent .submenu a.current {
+    background: #363c49;
+}
+
+/* sidebar hyperlink icon
+   ========================================================================== */
+.bg-dark-menu.sidebar ul.menu li ul li.parent a.employ:before {
+    color: #6b7382;
+}
+
+.bg-dark-menu.sidebar ul.menu li ul li.parent a.employ.active:before {
+    color: #b9b9b9;
+}
+
+/* website content
+   ========================================================================== */
+.content .box {
+    color: #494949;
+}
+
+/* navbar user dropdown nav icon
+   ========================================================================== */
+.bg-dark-dropdown ul.navbar-nav li i {
+    color: #eaedf1;
+}
+
+/* navbar user dropdown toggle
+   ========================================================================== */
+.bg-dark-dropdown ul.navbar-nav li a.toggle {
+    color: #494949;
+}
+
+.bg-dark-dropdown ul.navbar-nav li a.toggle:before {
+    color: #c9c9c9;
+}
+
+/* navbar user dropdown menu
+   ========================================================================== */
+.bg-dark-dropdown ul.navbar-nav li ul.dropdown-menu {
+    border-color: transparent;
+    background: #1d222c;
+}
+
+/* navbar user dropdown menu icon
+   ========================================================================== */
+.bg-dark-dropdown ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
+    color: #eaedf1;
+}
+
+/* navbar user dropdown menu hyperlink
+   ========================================================================== */
+.bg-dark-dropdown ul.navbar-nav li ul.dropdown-menu li a {
+    color: #eaedf1;
+}
+
+.bg-dark-dropdown ul.navbar-nav li ul.dropdown-menu li a:hover {
+    color: #eaedf1;
+    background: #363c49;
+}
+
+.bg-dark-dropdown ul.navbar-nav li ul.dropdown-menu li a:active {
+    background: none;
+}
+
+/* custom perfect scrollbar style
+   ========================================================================== */
+.bg-dark-menu.sidebar .ps__thumb-y {
+    background: #e0e0e0;
+}
+
+.bg-dark-menu.sidebar .ps__rail-y:hover > .bg-dark-menu.sidebar .ps__thumb-y,
+.bg-dark-menu.sidebar .ps__rail-y:focus > .bg-dark-menu.sidebar .ps__thumb-y,
+.bg-dark-menu.sidebar .ps__rail-y.ps--clicking .ps__thumb-y {
+    background: #e0e0e0;
+}
+
+.bg-dark-menu.sidebar .ps .ps__rail-y:hover,
+.bg-dark-menu.sidebar .ps .ps__rail-y:focus,
+.bg-dark-menu.sidebar .ps .ps__rail-y.ps--clicking {
+    background: none;
+}
