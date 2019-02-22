@@ -1,7 +1,7 @@
 
 ## Sidebar menu
 
-Sidebar menu based on bootstrap 4
+Sidebar menu skeleton for dashboard based on bootstrap 4
 
 ## Installation
 
