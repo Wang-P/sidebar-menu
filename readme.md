@@ -43,4 +43,6 @@ Dark color for dropdown.
 <div class="collapse navbar-collapse bg-dark-dropdown">
 ```
 
+## Support the project
+
 *If you like the template, give it a star.*
