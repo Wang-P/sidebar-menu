@@ -89,6 +89,49 @@ body {
     color: #494949;
 }
 
+/* navbar user nav icon
+   ========================================================================== */
+ul.navbar-nav li i {
+    color: #c9c9c9;
+}
+
+/* navbar user dropdown toggle
+   ========================================================================== */
+ul.navbar-nav li a.toggle {
+    color: #494949;
+}
+
+ul.navbar-nav li a.toggle:before {
+    color: #c9c9c9;
+}
+
+/* navbar user dropdown menu
+   ========================================================================== */
+ul.navbar-nav li ul.dropdown-menu {
+    border-color: transparent;
+    background: #f4f4f4;
+}
+
+/* navbar user dropdown menu icon
+   ========================================================================== */
+ul.navbar-nav li ul.dropdown-menu a.dropdown-item:hover i {
+    color: #494949;
+}
+
+/* navbar user dropdown menu hyperlink
+   ========================================================================== */
+ul.navbar-nav li ul.dropdown-menu li a {
+    color: #494949;
+}
+
+ul.navbar-nav li ul.dropdown-menu li a:hover {
+    color: #494949;
+}
+
+ul.navbar-nav li ul.dropdown-menu li a:active {
+    background: none;
+}
+
 /* custom perfect scrollbar style
    ========================================================================== */
 .bg-white-2.sidebar .ps__thumb-y {
