@@ -43,4 +43,4 @@ Dark color for dropdown menu.
 .bg-Dark-dropdown
 ```
 
-*We do not change the color of Navbar.*
+**We do not change the color of Navbar.**
