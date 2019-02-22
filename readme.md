@@ -6,6 +6,7 @@ Sidebar menu is simple and fast skeleton for dashboard based on bootstrap 4
 ## Installation
 
 ```
+git clone https://github.com/accgit/sidebar-menu.git path/to/dir
 npm i sidebar.skeleton.bootstrap
 ```
 
