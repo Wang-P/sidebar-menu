@@ -17,27 +17,27 @@ npm i sidebar.skeleton.bootstrap
 - Perfect scrollbar 1.4
 - Open Sans @font-face kit
 
-## Two basic theme for sidebar menu and dropdown menu
+## Two basic theme for sidebar and dropdown menu
 
-White color for menu.
+White color for sidebar.
 
 ```
 .bg-white-menu
 ```
 
-White color for dropdown menu.
+White color for dropdown.
 
 ```
 .bg-white-dropdown
 ```
 
-Dark color for menu.
+Dark color for sidebar.
 
 ```
 .bg-dark-menu
 ```
 
-Dark color for dropdown menu.
+Dark color for dropdown.
 
 ```
 .bg-Dark-dropdown
