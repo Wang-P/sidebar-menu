@@ -1,7 +1,7 @@
 
 ## Sidebar menu
 
-Sidebar menu skeleton for dashboard based on bootstrap 4
+Sidebar menu is simple and fast skeleton for dashboard based on bootstrap 4
 
 ## Installation
 
