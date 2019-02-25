@@ -37,34 +37,34 @@
     }
 }
 
-// list hyperlink
+// list link
 // -----------------------------------------------------------------------------
 .list-link {
     display: block;
     margin-bottom: size(2);
     padding: 0 size(10);
 
-    i.fa {
+    .fa {
 	margin-right: size(10);
-	transition: 0.5s all;
     }
 
     &:hover {
 	text-decoration: none;
 
-	i.fa {
+	.fa {
 	    transform: rotate(360deg);
+	    transition: 0.5s all;
 	}
     }
 }
 
-// list rotating arrow
+// list link rotating arrow
 // -----------------------------------------------------------------------------
 .link-arrow {
     &:before {
 	float: right;
 	font-family: "FontAwesome";
-	margin: 0 0.1875rem 0 0;
+	margin: 0 size(3) 0 0;
     }
 
     &.up {
@@ -89,11 +89,10 @@
 	&:before {
 	    transform: rotate(180deg);
 	}
-    }
-
-    &.rotate.a {
-	&:before {
-	    transform: rotate(-180deg);
+	&-revert {
+	    &:before {
+		transform: rotate(-180deg);
+	    }
 	}
     }
 }

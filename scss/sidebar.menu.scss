@@ -9,7 +9,14 @@
 @import "_variable.scss";
 @import "_base.scss";
 @import "_layout.scss";
-@import "_navbar.scss";
+
+// navbar
+@import "navbar/_navbar.scss";
+@import "navbar/_navbar.light.scss";
+
+// dropdown
+@import "dropdown/_dropdown.scss";
+@import "dropdown/_dropdown.light.scss";
 
 // sidebar list
 @import "list/_list.scss";

@@ -11,7 +11,11 @@
     .list-link {
 	color: darken($white, 75%);
 
-	i.fa {
+	&-current {
+	    background: darken($white, 4%);
+	}
+
+	.fa {
 	    color: darken($white, 18%);
 	}
 
@@ -19,10 +23,21 @@
 	    border-radius: size(3);
 	    background: darken($white, 4%);
 
-	    i.fa {
+	    .fa {
 		color: darken($white, 75%);
 	    }
+	}
+    }
 
+    .link-arrow {
+	&:before {
+	    color: darken($white, 18%);
+	}
+
+	&.active {
+	    &:before {
+		color: darken($white, 75%)
+	    }
 	}
     }
 }
