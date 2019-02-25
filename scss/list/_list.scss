@@ -1,0 +1,99 @@
+
+// list
+// -----------------------------------------------------------------------------
+.list {
+    max-height: 80vh;
+    padding: 0 size(20);
+    font-size: size(14);
+
+    &-item {
+	line-height: size(34);
+	margin-top: size(10);
+	padding: 0;
+    }
+
+    &-name {
+	font-size: size(12);
+	text-transform: uppercase;
+    }
+}
+
+// list multi-level
+// -----------------------------------------------------------------------------
+.list-ml {
+    overflow: hidden;
+    padding: 0;
+
+    &-item {
+	@extend .list-item;
+	margin: 0;
+
+    }
+
+    &-none {
+	display: none;
+	margin: size(15) 0 size(15) size(10);
+	padding-left: size(10);
+    }
+}
+
+// list hyperlink
+// -----------------------------------------------------------------------------
+.list-link {
+    display: block;
+    margin-bottom: size(2);
+    padding: 0 size(10);
+
+    i.fa {
+	margin-right: size(10);
+	transition: 0.5s all;
+    }
+
+    &:hover {
+	text-decoration: none;
+
+	i.fa {
+	    transform: rotate(360deg);
+	}
+    }
+}
+
+// list rotating arrow
+// -----------------------------------------------------------------------------
+.link-arrow {
+    &:before {
+	float: right;
+	font-family: "FontAwesome";
+	margin: 0 0.1875rem 0 0;
+    }
+
+    &.up {
+	&:before {
+	    content: "\f106";
+	}
+    }
+
+    &.down {
+	&:before {
+	    content: "\f107";
+	}
+    }
+
+    &.transition {
+	&:before {
+	    transition: 0.2s all;
+	}
+    }
+
+    &.rotate {
+	&:before {
+	    transform: rotate(180deg);
+	}
+    }
+
+    &.rotate.a {
+	&:before {
+	    transform: rotate(-180deg);
+	}
+    }
+}

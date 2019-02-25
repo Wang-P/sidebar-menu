@@ -1,0 +1,28 @@
+
+// sidebar list light color
+// -----------------------------------------------------------------------------
+.sidebar-light {
+    background: $white;
+
+    .list-name {
+	color: darken($white, 45%);
+    }
+
+    .list-link {
+	color: darken($white, 75%);
+
+	i.fa {
+	    color: darken($white, 18%);
+	}
+
+	&:hover {
+	    border-radius: size(3);
+	    background: darken($white, 4%);
+
+	    i.fa {
+		color: darken($white, 75%);
+	    }
+
+	}
+    }
+}

@@ -1,0 +1,16 @@
+
+/*!
+ * Sidebar menu for Bootstrap 4
+ * Copyright Zdenek Papucik
+ * MIT License
+*/
+
+@import "_function.scss";
+@import "_variable.scss";
+@import "_base.scss";
+@import "_layout.scss";
+@import "_navbar.scss";
+
+// sidebar list
+@import "list/_list.scss";
+@import "list/_list.light.scss";

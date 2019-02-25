@@ -1,0 +1,35 @@
+
+// layout sidebar
+// -----------------------------------------------------------------------------
+.sidebar {
+    min-height: calc(100vh - #{size(57)});
+    transition: margin 0.15s ease-out;
+    border-top-right-radius: size(3);
+    margin-left: - size($sidebar);
+
+    &-menu {
+	width: size($sidebar);
+    }
+
+    @media (min-width: size($medium)) {
+	margin-left: 0;
+    }
+}
+
+// layout content
+// -----------------------------------------------------------------------------
+.content {
+    min-width: 100vw;
+
+    &-box {
+	padding: size(20);
+	margin-bottom: size(20);
+	border-radius: size(3);
+	font-size: size(14);
+    }
+
+    @media (min-width: size($medium)) {
+	min-width: 0;
+	width: 100%;
+    }
+}
