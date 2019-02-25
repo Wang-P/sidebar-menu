@@ -7,83 +7,73 @@
 	    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 	    <link rel="stylesheet" href="node_modules/open-sans-fontface/open-sans.css">
 	    <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-	    <link rel="stylesheet" href="css/sidebar.menu.css">
-	    <link rel="stylesheet" href="css/sidebar.menu.white.css">
-	    <link rel="stylesheet" href="css/sidebar.menu.dark.css">
+	    <link rel="stylesheet" href="dist/css/sidebar.menu.css">
 	    <title>Sidebar menu on bootstrap 4</title>
 	</head>
 	<body>
 		<div class="d-flex" id="wrapper">
 
-			<!-- sidebar menu -->
-			<div class="sidebar bg-white-menu">
-				<div class="menu">
+			<!-- sidebar -->
+			<div class="sidebar sidebar-light">
+
+				<!-- sidebar menu -->
+				<div class="sidebar-menu">
 
 					<!-- menu -->
-					<ul class="menu scrollbar">
+					<ul class="list list-unstyled scrollbar">
 
 						<!-- simple menu -->
-						<li>
-							<span class="name">Translate</span>
-							<ul>
-								<li><a href="#">Czech</a></li>
-								<li><a href="#" class="current">English</a></li>
+						<li class="list-item">
+							<span class="list-name">Translate</span>
+							<ul class="list-ml">
+								<li class="list-ml-item"><a href="#" class="list-link">Czech</a></li>
+								<li class="list-ml-item"><a href="#" class="list-link current">English</a></li>
 							</ul>
 						</li>
 
 						<!-- multi-level dropdown menu -->
-						<li>
-							<span class="name">Dashboard</span>
-							<ul>
-								<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-								<li class="parent">
-									<a href="#" class="employ current"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
-									<ul class="submenu">
-										<li><a href="#">Timezone</a></li>
-										<li><a href="#">Permissions</a></li>
-										<li class="parent">
-											<a href="#" class="employ current">Maintenance</a>
-											<ul class="submenu">
-												<li><a href="#">On</a></li>
-												<li><a href="#" class="current">Off</a></li>
+						<li class="list-item">
+							<span class="list-name">Dashboard</span>
+							<ul class="list-ml">
+								<li class="list-ml-item"><a href="#" class="list-link"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+								<li class="list-ml-item"><a href="#" class="list-link link-arrow current"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+									<ul class="list-ml border-left list-ml-none">
+										<li class="list-ml-item"><a href="#" class="list-link">Timezone</a></li>
+										<li class="list-ml-item"><a href="#" class="list-link">Permissions</a></li>
+										<li class="list-ml-item"><a href="#" class="list-link link-arrow current">Maintenance</a>
+											<ul class="list-ml border-left list-ml-none">
+												<li class="list-ml-item"><a href="#" class="list-link">On</a></li>
+												<li class="list-ml-item"><a href="#" class="list-link current">Off</a></li>
 											</ul>
 										</li>
 									</ul>
 								</li>
 
 								<!-- notice info -->
-								<li>
-									<a href="#" class="clearfix">
-										<div class="float-left"><i class="fa fa-exclamation" aria-hidden="true"></i>Notice</div>
-										<div class="float-right">
-											<span class="badge badge-pill badge-danger">3</span>
-										</div>
-									</a>
-								</li>
+								<li class="list-ml-item"><a href="#" class="list-link">Notice</a></li>
 							</ul>
 						</li>
 
 						<!-- multi-level dropdown menu -->
-						<li>
-							<span class="name">Coments</span>
-							<ul>
-								<li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>New</a></li>
-								<li class="parent">
-									<a href="#" class="employ"><i class="fa fa-comments-o" aria-hidden="true"></i>Settings comments</a>
-									<ul class="submenu">
-										<li><a href="#">Disable</a></li>
-										<li><a href="#">Enable</a></li>
+						<li class="list-item">
+							<span class="list-name">Coments</span>
+							<ul class="list-ml">
+								<li class="list-ml-item"><a href="#" class="list-link"><i class="fa fa-plus" aria-hidden="true"></i>New</a></li>
+								<li class="list-ml-item"><a href="#" class="list-link link-arrow"><i class="fa fa-comments-o" aria-hidden="true"></i>Settings comments</a>
+									<ul class="list-ml border-left list-ml-none">
+										<li class="list-ml-item"><a href="#" class="list-link">Disable</a></li>
+										<li class="list-ml-item"><a href="#" class="list-link">Enable</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
 
 						<!-- simple menu -->
-						<li>
-							<span class="name">Blog</span>
-							<ul>
-								<li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Add</a></li>
-								<li><a href="#"><i class="fa fa-table" aria-hidden="true"></i>List</a></li>
+						<li class="list-item">
+							<span class="list-name">Blog</span>
+							<ul class="list-ml">
+								<li class="list-ml-item"><a href="#" class="list-link"><i class="fa fa-plus" aria-hidden="true"></i>Add</a></li>
+								<li class="list-ml-item"><a href="#" class="list-link"><i class="fa fa-table" aria-hidden="true"></i>List</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -113,7 +103,7 @@
 
 								<!-- avatar and username -->
 								<a href="#" data-toggle="dropdown" class="nav-link toggle">
-									<img src="img/avatar.png" alt="avatar">John Doe
+									<img src="img/avatar.png" class="avatar" alt="avatar">John Doe
 								</a>
 
 								<!-- click dropdown menu -->
@@ -137,7 +127,7 @@
 				<div class="container-fluid">
 
 					<!-- one box -->
-					<div class="box bg-white">
+					<div class="content-box bg-white">
 						<h3>Website content</h3>
 						<p>Here is content this website page.</p>
 					</div>
@@ -145,13 +135,13 @@
 					<!-- two box -->
 					<div class="row">
 						<div class="col-sm-6 col-md-6">
-							<div class="box bg-white">
+							<div class="content-box bg-white">
 								<h3>Website content</h3>
 								<p>Here is content this website page.</p>
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<div class="box bg-white">
+							<div class="content-box bg-white">
 								<h3>Website content</h3>
 								<p>Here is content this website page.</p>
 							</div>
