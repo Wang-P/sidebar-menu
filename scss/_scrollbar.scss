@@ -1,3 +1,47 @@
 
 // list perfect scrollbar
 // -----------------------------------------------------------------------------
+.list-scrollbar {
+    position: relative;
+    overflow: hidden;
+
+    .ps__thumb-y {
+	width: size(5);
+    }
+
+    .ps__rail-y {
+	margin-top: size(1);
+	&:hover, &:focus {
+	    > .ps__thumb-y {
+		width: size(5);
+	    }
+	}
+	&.ps--clicking .ps__thumb-y {
+	    width: size(5);
+	}
+    }
+}
+
+.list-scrollbar-light {
+    .ps__thumb-y {
+	background: #e0e0e0;
+    }
+    .ps__rail-y {
+	&:hover, &:focus {
+	    > .ps__thumb-y {
+		background: #e0e0e0;
+	    }
+	}
+	&.ps--clicking .ps__thumb-y {
+	    background: #e0e0e0;
+	}
+    }
+}
+
+.ps {
+    .ps__rail-y {
+	&:hover, &:focus, &.ps--clicking {
+	    background: none;
+	}
+    }
+}
