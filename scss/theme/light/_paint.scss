@@ -1,0 +1,28 @@
+
+// paint style
+// -----------------------------------------------------------------------------
+
+// color
+$white: #fff;
+
+// website color style
+%color {
+    &-body {
+	@include color(bg, d, $white, 4);
+    }
+    &-font {
+	@include color(color, d, $white, 72);
+    }
+    &-list-name {
+	@include color(color, d, $white, 40);
+    }
+    &-white {
+	@include color(bg, d, $white, 0);
+    }
+    &-icon {
+	@include color(color, d, $white, 20);
+    }
+    &-icon-hover {
+	@include color(color, d, $white, 72);
+    }
+}

@@ -1,9 +1,8 @@
 
-// html body element
+// base element
 // -----------------------------------------------------------------------------
 body {
     overflow-x: hidden;
     margin-top: size(57);
     font-family: $font-family-sans;
-    background: darken($white, 4%);
 }

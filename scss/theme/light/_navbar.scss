@@ -1,0 +1,17 @@
+
+// navbar top light color
+// -----------------------------------------------------------------------------
+.navbar {
+    &-link {
+	@extend %color-font;
+	&:hover {
+	    @extend %color-font;
+	}
+    }
+    &-sidebar-bars {
+	@extend %color-icon;
+	&:hover {
+	    @extend %color-icon-hover;
+	}
+    }
+}

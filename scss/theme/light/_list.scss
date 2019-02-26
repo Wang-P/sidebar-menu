@@ -1,0 +1,35 @@
+
+// sidebar list light color
+// -----------------------------------------------------------------------------
+.sidebar-light {
+    @extend %color-white;
+    .list-name {
+	@extend %color-list-name;
+    }
+    .list-link {
+	@extend %color-font;
+	&-current {
+	    @extend %color-body;
+	}
+	.fa {
+	    @extend %color-icon;
+	}
+	&:hover {
+	    @extend %color-body;
+	    .fa {
+		@extend %color-icon-hover;
+	    }
+	}
+    }
+    .link-arrow {
+	&:before {
+	    @extend %color-icon;
+	}
+
+	&.active {
+	    &:before {
+		@extend %color-icon-hover;
+	    }
+	}
+    }
+}

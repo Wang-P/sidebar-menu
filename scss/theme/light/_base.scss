@@ -1,3 +1,6 @@
 
-// navbar light color
+// base element
 // -----------------------------------------------------------------------------
+body {
+    @extend %color-body;
+}

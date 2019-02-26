@@ -6,18 +6,16 @@
 */
 
 @import "_function.scss";
+@import "_mixin.scss";
 @import "_variable.scss";
 @import "_base.scss";
 @import "_layout.scss";
+@import "_list.scss";
+@import "_navbar.scss";
 
-// navbar
-@import "navbar/_navbar.scss";
-@import "navbar/_navbar.light.scss";
-
-// dropdown
-@import "dropdown/_dropdown.scss";
-@import "dropdown/_dropdown.light.scss";
-
-// sidebar list
-@import "list/_list.scss";
-@import "list/_list.light.scss";
+// theme light
+@import "theme/light/_paint.scss";
+@import "theme/light/_base.scss";
+@import "theme/light/_layout.scss";
+@import "theme/light/_list.scss";
+@import "theme/light/_navbar.scss";

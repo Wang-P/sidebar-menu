@@ -1,0 +1,15 @@
+
+// mixin color type on darken
+// -----------------------------------------------------------------------------
+@mixin color($type: color, $style: d, $paint: 0, $value: 0) {
+    @if ($type == color) {
+	@if ($style == d) {
+	    color: darken($paint, $value);
+	}
+    }
+    @if ($type == bg) {
+	@if ($style == d) {
+	    background: darken($paint, $value);
+	}
+    }
+}

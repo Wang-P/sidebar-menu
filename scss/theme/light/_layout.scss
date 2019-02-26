@@ -1,6 +1,8 @@
 
-// navbar
+// layout content
 // -----------------------------------------------------------------------------
-.navbar-link {
-    margin-left: size(3);
+.content {
+    &-box {
+	@extend %color-font;
+    }
 }
