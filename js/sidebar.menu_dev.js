@@ -7,8 +7,8 @@
 (function($) {
 
 	// toggle sidebar menu
-	$('#sidebar').on('click', function() {
-		$('#wrapper').toggleClass('toggle');
+	$('#navbar-sidebar-toggle').on('click', function() {
+		$('#wrapper').toggleClass('toggle-sidebar');
 	});
 
 	// list init
