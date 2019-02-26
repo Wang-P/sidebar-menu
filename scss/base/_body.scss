@@ -1,0 +1,11 @@
+
+// Base elements
+// -----------------------------------------------------------------------------
+
+// Element body
+body {
+    overflow-x: hidden;
+    font-family: $font-sans;
+
+    @include rem('margin-top', 57px);
+}

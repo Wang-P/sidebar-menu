@@ -1,14 +1,24 @@
 
+// Utils
+// -----------------------------------------------------------------------------
 @import 'utils/_variables';
-@import 'utils/_functions';
+@import 'utils/_mixins';
 
+// Base
+// -----------------------------------------------------------------------------
 @import 'base/_body';
 
+// Layouts
+// -----------------------------------------------------------------------------
 @import 'layout/_content';
 @import 'layout/_sidebar';
 
+// Components
+// -----------------------------------------------------------------------------
 @import 'components/_navbar';
 @import 'components/_dropdown';
 @import 'components/_list';
 
+// Themes
+// -----------------------------------------------------------------------------
 @import 'themes/theme';
