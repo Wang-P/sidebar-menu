@@ -4,6 +4,7 @@
 @import 'utils/_rem.scss';
 @import 'utils/_mq.scss';
 @import 'utils/_variables.scss';
+@import 'utils/_functions.scss';
 
 // Base
 // -----------------------------------------------------------------------------
@@ -25,4 +26,5 @@
 
 // Themes
 // -----------------------------------------------------------------------------
-@import 'themes/_theme.scss';
+@import 'themes/_default.scss';
+@import 'themes/_dark.scss';

@@ -5,26 +5,26 @@ body {
 
 .content {
   min-width: 100vw; }
-  @media (min-width: 48em) {
-    .content {
-      min-width: 0;
-      width: 100%; } }
-  .content-box {
-    padding: 1.25rem;
-    margin-bottom: 1.25rem;
-    border-radius: 0.1875rem;
-    font-size: 0.875rem; }
+@media (min-width: 48em) {
+  .content {
+    min-width: 0;
+    width: 100%; } }
+.content-box {
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.1875rem;
+  font-size: 0.875rem; }
 
 .sidebar {
   transition: margin 0.15s ease-out;
   min-height: calc(100vh - 3.5625rem);
   margin-left: -17rem;
   border-top-right-radius: 0.1875rem; }
-  @media (min-width: 48em) {
-    .sidebar {
-      margin-left: 0; } }
-  .sidebar-menu {
-    width: 17rem; }
+@media (min-width: 48em) {
+  .sidebar {
+    margin-left: 0; } }
+.sidebar-menu {
+  width: 17rem; }
 
 .navbar-link {
   margin-left: 0.1875rem; }
@@ -35,20 +35,20 @@ body {
 
 .dropdown {
   margin-left: auto; }
-  .dropdown-menu {
-    padding: 0.125rem;
-    top: 2.875rem; }
-  .dropdown-avatar {
-    border-radius: 50%;
-    width: 2.25rem;
-    height: 2.25rem;
-    margin-right: 0.3125rem; }
-  .dropdown-user {
-    font-weight: 600;
-    display: block;
-    float: left;
-    font-size: 0.875rem;
-    margin: 0.5rem 0.5rem 0 0; }
+.dropdown-menu {
+  padding: 0.125rem;
+  top: 2.875rem; }
+.dropdown-avatar {
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 0.3125rem; }
+.dropdown-user {
+  font-weight: 600;
+  display: block;
+  float: left;
+  font-size: 0.875rem;
+  margin: 0.5rem 0.5rem 0 0; }
 
 .dropdown-employ:before {
   font-family: "FontAwesome";
@@ -60,43 +60,46 @@ body {
 .dropdown-item {
   font-size: 0.875rem;
   padding: 0.3125rem 0.625rem; }
-  .dropdown-item:hover {
-    border-radius: 0.1875rem; }
+.dropdown-item .fa {
+  transition: 0.5s all;
+  padding-right: 0.625rem; }
+.dropdown-item:hover {
+  border-radius: 0.1875rem; }
 
 .list {
   max-height: 80vh;
   font-size: 0.875rem;
   padding: 0 1.25rem; }
-  .list-item, .list-ml-item {
-    padding: 0;
-    margin-top: 0.625rem;
-    line-height: 2.125rem; }
-  .list-name {
-    text-transform: uppercase;
-    font-size: 0.75rem; }
+.list-item, .list-ml-item {
+  padding: 0;
+  margin-top: 0.625rem;
+  line-height: 2.125rem; }
+.list-name {
+  text-transform: uppercase;
+  font-size: 0.75rem; }
 
 .list-ml {
   overflow: hidden;
   padding: 0; }
-  .list-ml-item {
-    margin: 0; }
-  .list-ml-none {
-    display: none;
-    margin: 0.9375rem 0 0.9375rem 0.625rem;
-    padding-left: 0.625rem; }
+.list-ml-item {
+  margin: 0; }
+.list-ml-none {
+  display: none;
+  margin: 0.9375rem 0 0.9375rem 0.625rem;
+  padding-left: 0.625rem; }
 
 .list-link {
   display: block;
   margin-bottom: 0.125rem;
   padding: 0 0.625rem; }
-  .list-link .fa {
-    margin-right: 0.625rem; }
-  .list-link:hover {
-    text-decoration: none;
-    border-radius: 0.1875rem; }
-    .list-link:hover .fa {
-      transform: rotate(360deg);
-      transition: 0.5s all; }
+.list-link .fa {
+  margin-right: 0.625rem; }
+.list-link:hover {
+  text-decoration: none;
+  border-radius: 0.1875rem; }
+.list-link:hover .fa {
+  transform: rotate(360deg);
+  transition: 0.5s all; }
 
 .link-arrow:before {
   float: right;
@@ -123,16 +126,14 @@ body {
 .ps__rail-y {
   margin-top: 0.0625rem; }
 
-.ps__rail-y:hover .ps__thumb-y,
-.ps__rail-y:focus .ps__thumb-y,
-.ps__rail-y.ps--clicking .ps__thumb-y {
+.ps__rail-y:hover .ps__thumb-y, .ps__rail-y:focus .ps__thumb-y, .ps__rail-y.ps--clicking .ps__thumb-y {
   width: 0.3125rem; }
 
 .toggle-sidebar .sidebar {
   margin-left: 0; }
-  @media (min-width: 48em) {
-    .toggle-sidebar .sidebar {
-      margin-left: -17rem; } }
+@media (min-width: 48em) {
+  .toggle-sidebar .sidebar {
+    margin-left: -17rem; } }
 
 .nanobar {
   top: 0;
@@ -146,73 +147,75 @@ body {
   width: 0; }
 
 body {
-  background: whitesmoke;
-  color: #4d4d4d; }
+  background: #f2f2f2;
+  color: #404040; }
 
 .sidebar-light {
   background: white; }
 
+.navbar-link {
+  color: #404040; }
+.navbar-link:hover {
+  color: #404040; }
+
 .navbar-sidebar-bars {
   color: #cccccc; }
-  .navbar-sidebar-bars:hover {
-    color: #4d4d4d; }
-
-.navbar-link {
-  color: #4d4d4d; }
-  .navbar-link:hover {
-    color: #4d4d4d; }
+.navbar-sidebar-bars:hover {
+  color: #404040; }
 
 .dropdown-light {
-  background: whitesmoke; }
-  .dropdown-light .dropdown-item {
-    color: #4d4d4d; }
-    .dropdown-light .dropdown-item:hover {
-      background: white; }
+  background: #f2f2f2; }
+
+.dropdown-light .dropdown-item {
+  color: #404040; }
+.dropdown-light .dropdown-item .fa {
+  color: #cccccc; }
+.dropdown-light .dropdown-item:hover {
+  color: #404040;
+  background: white; }
+.dropdown-light .dropdown-item:hover .fa {
+  color: #404040; }
 
 .dropdown-link {
-  color: #4d4d4d; }
-  .dropdown-link:hover {
-    color: #4d4d4d; }
+  color: #404040; }
+.dropdown-link:hover {
+  color: #404040; }
 
 .dropdown-employ:before {
   color: #cccccc; }
 
-.list-link {
-  color: #4d4d4d; }
-  .list-link-current {
-    background: whitesmoke; }
-  .list-link:hover {
-    background: whitesmoke;
-    color: #4d4d4d; }
-    .list-link:hover .fa {
-      color: #4d4d4d; }
+.sidebar-light .list-link {
+  color: #404040; }
+.sidebar-light .list-link-current {
+  background: #f2f2f2; }
+.sidebar-light .list-link:hover {
+  background: #f2f2f2;
+  color: #404040; }
+.sidebar-light .list-link:hover .fa {
+  color: #404040; }
 
-.list-link .fa {
+.sidebar-light .list-link .fa {
   color: #cccccc; }
 
-.list-name {
+.sidebar-light .list-name {
   color: gray; }
 
-.link-arrow:before {
+.sidebar-light .link-arrow:before {
   color: #cccccc; }
 
-.link-arrow.active:before {
-  color: #4d4d4d; }
+.sidebar-light .link-arrow.active:before {
+  color: #404040; }
 
-.ps__thumb-y {
+.sidebar-light .ps__thumb-y {
   background: #e6e6e6; }
 
-.ps__rail-y:hover .ps__thumb-y,
-.ps__rail-y:focus .ps__thumb-y,
-.ps__rail-y.ps--clicking .ps__thumb-y {
+.sidebar-light .ps__rail-y:hover .ps__thumb-y, .sidebar-light .ps__rail-y:focus .ps__thumb-y, .sidebar-light .ps__rail-y.ps--clicking .ps__thumb-y {
   background: #e6e6e6; }
 
-.ps .ps__rail-y:hover,
-.ps .ps__rail-y:focus,
-.ps .ps__rail-y.ps--clicking {
+.ps .ps__rail-y:hover, .ps .ps__rail-y:focus, .ps .ps__rail-y.ps--clicking {
   background: none; }
 
 .nanobar .bar {
-  background: #333333; }
+  background: #404040; }
 
 /*# sourceMappingURL=sidebar.css.map */

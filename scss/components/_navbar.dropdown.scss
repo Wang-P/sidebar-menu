@@ -47,6 +47,12 @@
     @include rem('font-size', 14px);
     @include rem('padding', 5px 10px);
 
+    .fa {
+	transition: 0.5s all;
+
+	@include rem('padding-right', 10px);
+    }
+
     &:hover {
 	@include rem('border-radius', 3px);
     }
