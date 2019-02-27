@@ -7,7 +7,7 @@ $browser-px: 16px;
 
 /// Convert px to rem
 /// @param {String} $property - value in px
-/// @param {String} $context - default setting if not specified by the user
+/// @param {*} $context - default setting if not specified by the user
 @mixin rem($property, $context)
 {
     $browser-rem: $browser-px / 1rem * 1;
