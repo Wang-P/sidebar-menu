@@ -21,7 +21,7 @@
     }
 }
 
-// Sidebar list component multi-level
+// Sidebar list multi-level
 // -----------------------------------------------------------------------------
 .list-ml {
     overflow: hidden;
@@ -41,13 +41,17 @@
     }
 }
 
-// Sidebar list component link
+// Sidebar list link
 // -----------------------------------------------------------------------------
 .list-link {
     display: block;
 
     @include rem('margin-bottom', 2px);
     @include rem('padding', 0 10px);
+
+    .fa {
+	@include rem('margin-right', 10px);
+    }
 
     &:hover {
 	text-decoration: none;
@@ -59,38 +63,36 @@
 	    transition: 0.5s all;
 	}
     }
+}
 
-    .fa {
-	@include rem('margin-right', 10px);
+// Sidebar link arrow
+// -----------------------------------------------------------------------------
+.link-arrow {
+
+    &:before {
+	float: right;
+	font-family: $font-awesome;
+
+	@include rem('margin', 0 3px 0 0);
     }
 
-}
+    &.up:before {
+	content: "\f106";
+    }
 
-// Sidebar list component link arrow
-// -----------------------------------------------------------------------------
-.link-arrow:before {
-    float: right;
-    font-family: $font-awesome;
+    &.down:before {
+	content: "\f107";
+    }
 
-    @include rem('margin', 0 3px 0 0);
-}
+    &.transition:before {
+	transition: 0.2s all;
+    }
 
-.link-arrow.up:before {
-    content: "\f106";
-}
+    &.rotate:before {
+	transform: rotate(180deg);
+    }
 
-.link-arrow.down:before {
-    content: "\f107";
-}
-
-.link-arrow.transition:before {
-    transition: 0.2s all;
-}
-
-.link-arrow.rotate:before {
-    transform: rotate(180deg);
-}
-
-.link-arrow.rotate-revert:before {
-    transform: rotate(-180deg);
+    &.rotate-revert:before {
+	transform: rotate(-180deg);
+    }
 }

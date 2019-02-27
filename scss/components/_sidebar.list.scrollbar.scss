@@ -3,8 +3,11 @@
 // -----------------------------------------------------------------------------
 .list-scrollbar {
     position: relative;
+    overflow: hidden;
 }
 
+// List custom perfect scrollbar
+// -----------------------------------------------------------------------------
 .ps__thumb-y {
     @include rem('width', 5px);
 }
