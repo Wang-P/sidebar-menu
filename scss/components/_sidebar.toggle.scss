@@ -5,6 +5,6 @@
     margin-left: 0;
 
     @include mq('medium') {
-	@include rem('margin-left', -272px);
+	@include rem('margin-left', - $sidebar);
     }
 }

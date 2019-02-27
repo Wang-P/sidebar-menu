@@ -5,7 +5,7 @@
     transition: margin 0.15s ease-out;
     min-height: calc(100vh - #{rem(57px)});
 
-    @include rem('margin-left', -272px);
+    @include rem('margin-left', - $sidebar);
     @include rem('border-top-right-radius', 3px);
 
     @include mq('medium') {
@@ -13,6 +13,6 @@
     }
 
     &-menu {
-	@include rem('width', 272px);
+	@include rem('width', $sidebar);
     }
 }
