@@ -1,0 +1,63 @@
+
+// Navbar dropdown component
+// -----------------------------------------------------------------------------
+.dropdown {
+    margin-left: auto;
+
+    &-menu {
+	padding: 0;
+
+	@include rem('top', 46px);
+    }
+
+    &-avatar {
+	border-radius: 50%;
+
+	@include rem('width', 36px);
+	@include rem('height', 36px);
+	@include rem('margin-right', 5px);
+    }
+
+    &-user {
+	font-weight: 600;
+	display: block;
+	float: left;
+
+	@include rem('font-size', 14px);
+	@include rem('margin', 8px 8px 0 0);
+    }
+}
+
+// Navbar dropdown employ toggle
+// -----------------------------------------------------------------------------
+.dropdown-employ {
+
+    &:hover {
+	text-decoration: none;
+    }
+
+    &:before {
+	font-family: $font-awesome;
+	content: "\f175";
+	float: right;
+
+	@include rem('margin', 10px 0 0 10px);
+	@include rem('font-size', 14px);
+    }
+}
+
+// Navbar dropdown menu
+// -----------------------------------------------------------------------------
+.dropdown-menu {
+    @include rem('padding', 2px);
+}
+
+// Navbar dropdown item
+// -----------------------------------------------------------------------------
+.dropdown-item {
+    @include rem('padding', 6px 10px);
+
+    &:hover {
+	@include rem('border-radius', 3px);
+    }
+}

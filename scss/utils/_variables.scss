@@ -4,7 +4,17 @@
 
 // Font family
 $font-sans: ('Open Sans', sans-serif);
+$font-awesome: 'FontAwesome';
 
 // Colors
 $white: rgb(255, 255, 255);
-$bg-color: darken($white, 5);
+$bg-color: darken($white, 4);
+$bg-scrollbar: darken($white, 10);
+$bg-dropdown: $white;
+$color-font: darken($white, 70);
+$color-list: darken($white, 50);
+$color-icon: darken($white, 20);
+$color-nanobar: darken($white, 80);
+
+// Media queries
+$mq-breakpoints: (medium: 768px);

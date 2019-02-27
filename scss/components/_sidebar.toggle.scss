@@ -1,0 +1,10 @@
+
+// Sidebar toggle component
+// -----------------------------------------------------------------------------
+.toggle-sidebar .sidebar {
+    margin-left: 0;
+
+    @include mq('medium') {
+	@include rem('margin-left', -272px);
+    }
+}

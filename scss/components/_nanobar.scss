@@ -1,0 +1,16 @@
+
+// Nanobar component
+// -----------------------------------------------------------------------------
+.nanobar {
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+    @include rem('height', 2px);
+}
+
+.nanobar .bar {
+    height: 100%;
+    transition: height .3s;
+    width: 0;
+}

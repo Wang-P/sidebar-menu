@@ -1,3 +1,16 @@
 
 // Navbar component
 // -----------------------------------------------------------------------------
+.navbar {
+
+    &-link {
+	@include rem('margin-left', 3px);
+    }
+
+    &-sidebar-bars {
+	transition: 0.2s all;
+
+	@include rem('font-size', 14px);
+	@include rem('margin-left', 4px);
+    }
+}

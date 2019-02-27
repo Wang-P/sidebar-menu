@@ -1,0 +1,20 @@
+
+// List scrollbar component
+// -----------------------------------------------------------------------------
+.list-scrollbar {
+    position: relative;
+}
+
+.ps__thumb-y {
+    @include rem('width', 5px);
+}
+
+.ps__rail-y {
+    @include rem('margin-top', 1px);
+}
+
+.ps__rail-y:hover .ps__thumb-y,
+.ps__rail-y:focus .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+    @include rem('width', 5px);
+}

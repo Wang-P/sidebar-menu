@@ -3,4 +3,118 @@
 // -----------------------------------------------------------------------------
 body {
     background: $bg-color;
+    color: $color-font;
+}
+
+// Sidebar layout
+// -----------------------------------------------------------------------------
+.sidebar-light  {
+	background: $white;
+}
+
+// Sidebar toggle component
+// -----------------------------------------------------------------------------
+.navbar-sidebar-bars {
+	color: $color-icon;
+
+	&:hover {
+		color: $color-font;
+	}
+}
+
+// Navbar component
+// -----------------------------------------------------------------------------
+.navbar-link {
+	color: $color-font;
+
+	&:hover {
+		color: $color-font;
+	}
+}
+
+// Navbar dropdown component
+// -----------------------------------------------------------------------------
+.dropdown-light {
+	background: $bg-color;
+
+	.dropdown-item {
+		color: $color-font;
+
+		&:hover {
+			background: $bg-dropdown;
+		}
+	}
+}
+
+.dropdown-link {
+	color: $color-font;
+
+	&:hover {
+		color: $color-font;
+	}
+}
+
+.dropdown-employ:before {
+	color: $color-icon;
+}
+
+// Sidebar list component link
+// -----------------------------------------------------------------------------
+.list-link {
+	color: $color-font;
+
+	&-current {
+		background: $bg-color;
+	}
+
+	&:hover {
+		background: $bg-color;
+		color: $color-font;
+
+		.fa {
+			color: $color-font;
+		}
+	}
+}
+
+.list-link .fa {
+	color: $color-icon;
+}
+
+.list-name {
+	color: $color-list;
+}
+
+// Sidebar list component link arrow
+// -----------------------------------------------------------------------------
+.link-arrow:before {
+	color: $color-icon;
+}
+
+.link-arrow.active:before {
+	color: $color-font;
+}
+
+// List scrollbar component
+// -----------------------------------------------------------------------------
+.ps__thumb-y {
+    background: $bg-scrollbar;
+}
+
+.ps__rail-y:hover .ps__thumb-y,
+.ps__rail-y:focus .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+    background: $bg-scrollbar;
+}
+
+.ps .ps__rail-y:hover,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-y.ps--clicking {
+    background: none;
+}
+
+// Nanobar component
+// -----------------------------------------------------------------------------
+.nanobar .bar {
+    background: $color-nanobar;
 }

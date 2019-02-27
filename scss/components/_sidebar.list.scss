@@ -1,0 +1,96 @@
+
+// Sidebar list component
+// -----------------------------------------------------------------------------
+.list {
+    max-height: 80vh;
+
+    @include rem('font-size', 14px);
+    @include rem('padding', 0 20px);
+
+    &-item {
+	padding: 0;
+
+	@include rem('margin-top', 10px);
+	@include rem('line-height', 34px);
+    }
+
+    &-name {
+	text-transform: uppercase;
+
+	@include rem('font-size', 12px);
+    }
+}
+
+// Sidebar list component multi-level
+// -----------------------------------------------------------------------------
+.list-ml {
+    overflow: hidden;
+    padding: 0;
+
+    &-item {
+	margin: 0;
+
+	@extend .list-item;
+    }
+
+    &-none {
+	display: none;
+
+	@include rem('margin', 15px 0 15px 10px);
+	@include rem('padding-left', 10px);
+    }
+}
+
+// Sidebar list component link
+// -----------------------------------------------------------------------------
+.list-link {
+    display: block;
+
+    @include rem('margin-bottom', 2px);
+    @include rem('padding', 0 10px);
+
+    &:hover {
+	text-decoration: none;
+
+	@include rem('border-radius', 3px);
+
+	.fa {
+	    transform: rotate(360deg);
+	    transition: 0.5s all;
+	}
+    }
+
+    .fa {
+	@include rem('margin-right', 10px);
+    }
+
+}
+
+// Sidebar list component link arrow
+// -----------------------------------------------------------------------------
+.link-arrow:before {
+    float: right;
+    font-family: $font-awesome;
+
+    @include rem('margin', 0 3px 0 0);
+}
+
+.link-arrow.up:before {
+    content: "\f106";
+}
+
+.link-arrow.down:before {
+    content: "\f107";
+}
+
+.link-arrow.transition:before {
+    transition: 0.2s all;
+}
+
+.link-arrow.rotate:before {
+    transform: rotate(180deg);
+}
+
+.link-arrow.rotate-revert:before {
+    transform: rotate(-180deg);
+}
