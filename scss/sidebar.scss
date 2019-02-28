@@ -5,10 +5,14 @@
  * MIT License
 */
 
+// Bootstrap
+// -----------------------------------------------------------------------------
+@import '../node_modules/bootstrap/scss/_functions.scss';
+@import '../node_modules/bootstrap/scss/_variables.scss';
+@import '../node_modules/bootstrap/scss/_mixins.scss';
+
 // Utils
 // -----------------------------------------------------------------------------
-@import 'utils/_rem.scss';
-@import 'utils/_mq.scss';
 @import 'utils/_variables.scss';
 @import 'utils/_functions.scss';
 
@@ -32,5 +36,4 @@
 
 // Themes
 // -----------------------------------------------------------------------------
-@import 'themes/_default.scss';
-@import 'themes/_dark.scss';
+@import 'themes/_theme.scss';

@@ -3,11 +3,19 @@
 // -----------------------------------------------------------------------------
 
 // Font family
-$font-sans: ('Open Sans', sans-serif);
+$font-sans: 'Open Sans', sans-serif;
 $font-awesome: 'FontAwesome';
 
-// Sidebar size
-$sidebar: 272px;
+// Unit rem
+$calc: $spacer * 0.0625;
 
-// Media queries
-$mq-breakpoints: (medium: 768px);
+// Font size
+$font-size: 14;
+$font-size-sm: 12;
+
+// Sizes
+$sidebar:   $calc * 272;
+$nanobar:   $calc * 2;
+$scrollbar: $calc * 5;
+$avatar:    $calc * 36;
+$top:	    $calc * 57;

@@ -6,18 +6,18 @@
     overflow: hidden;
 }
 
-// List custom perfect scrollbar
+// List custom scrollbar
 // -----------------------------------------------------------------------------
 .ps__thumb-y {
-    @include rem('width', 5px);
+    width: $scrollbar;
 }
 
 .ps__rail-y {
-    @include rem('margin-top', 1px);
+    margin-top: ($calc * 1);
 }
 
 .ps__rail-y:hover .ps__thumb-y,
 .ps__rail-y:focus .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
-    @include rem('width', 5px);
+    width: $scrollbar;
 }

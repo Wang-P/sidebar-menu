@@ -4,15 +4,16 @@
 .content {
     min-width: 100vw;
 
-    @include mq('medium') {
+    @include media-breakpoint-up('md') {
 	min-width: 0;
 	width: 100%;
     }
+}
 
-    &-box {
-	@include rem('padding', 20px);
-	@include rem('margin-bottom', 20px);
-	@include rem('border-radius', 3px);
-	@include rem('font-size', 14px);
-    }
+.content-box {
+    padding: ($calc * 20);
+    margin-bottom: ($calc * 20);
+
+    @include font-size($font-size);
+    @include border-radius($border-radius);
 }

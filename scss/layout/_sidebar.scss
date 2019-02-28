@@ -3,16 +3,15 @@
 // -----------------------------------------------------------------------------
 .sidebar {
     transition: margin 0.15s ease-out;
-    min-height: calc(100vh - #{rem(57px)});
+    min-height: calc(100vh - #{$top});
+    margin-left: - $sidebar;
 
-    @include rem('margin-left', - $sidebar);
-    @include rem('border-top-right-radius', 3px);
-
-    @include mq('medium') {
+    @include border-top-right-radius($border-radius);
+    @include media-breakpoint-up('md') {
 	margin-left: 0;
     }
+}
 
-    &-menu {
-	@include rem('width', $sidebar);
-    }
+.sidebar-menu {
+    width: $sidebar;
 }

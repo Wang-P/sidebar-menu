@@ -1,0 +1,72 @@
+
+// Theme colors
+// -----------------------------------------------------------------------------
+
+$color: rgb(255, 255, 255);
+$theme-colors: (
+    'light': (
+	'body-bg': darken($color, 5),
+	'body-color': darken($color, 75),
+	'sidebar-bg': $color,
+	'list-name': darken($color, 50),
+	'list-link': darken($color, 75),
+	'list-link-hover': darken($color, 5),
+	'list-icon': darken($color, 20),
+	'list-icon-hover': darken($color, 75),
+	'dropdown-bg': darken($color, 5),
+	'dropdown-item':darken($color, 75),
+    ),
+);
+
+body {
+    @each $theme, $map in $theme-colors {
+	& {
+	    background: map-get($map, body-bg);
+	    color: map-get($map, body-color);
+	}
+    }
+}
+
+.sidebar {
+    @each $theme, $map in $theme-colors {
+	&-#{$theme} {
+	    background: map-get($map, sidebar-bg);
+	}
+
+	&-#{$theme} .list-link {
+	    color: map-get($map, list-link);
+
+	    &-current {
+		background: map-get($map, list-link-hover);
+	    }
+
+	    @include hover {
+		background: map-get($map, list-link-hover);
+
+		.fa {
+		    color: map-get($map, list-icon-hover);
+		}
+	    }
+	}
+
+	&-#{$theme} .list-name {
+	    color: map-get($map, list-name);
+	}
+
+	&-#{$theme} .list-link .fa {
+	    color: map-get($map, list-icon);
+	}
+    }
+}
+
+.dropdown {
+    @each $theme, $map in $theme-colors {
+	&-#{$theme} {
+	    background: map-get($map, dropdown-bg);
+	}
+
+	&-#{$theme} .dropdown-item {
+	    color: map-get($map, dropdown-item);
+	}
+    }
+}

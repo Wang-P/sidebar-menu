@@ -3,57 +3,55 @@
 // -----------------------------------------------------------------------------
 .dropdown {
     margin-left: auto;
+}
 
-    &-menu {
-	@include rem('padding', 2px);
-	@include rem('top', 46px);
-    }
+.dropdown-menu {
+    padding: ($calc * 2);
+    top: ($calc * 46);
+}
 
-    &-avatar {
-	border-radius: 50%;
+.dropdown-user {
+    font-weight: 600;
+    display: block;
+    float: left;
+    margin-top: ($calc * 8);
+    margin-right: ($calc * 8);
 
-	@include rem('width', 36px);
-	@include rem('height', 36px);
-	@include rem('margin-right', 5px);
-    }
+    @include font-size($font-size);
+}
 
-    &-user {
-	font-weight: 600;
-	display: block;
-	float: left;
+.dropdown-avatar {
+    height: $avatar;
+    width: $avatar;
 
-	@include rem('font-size', 14px);
-	@include rem('margin', 8px 8px 0 0);
-    }
+    @include border-radius(50%);
 }
 
 // Navbar dropdown employ toggle
 // -----------------------------------------------------------------------------
-.dropdown-employ {
+.dropdown-employ:before {
+    font-family: $font-awesome;
+    content: "\f175";
+    float: right;
+    margin-top: ($calc * 8);
+    margin-left: ($calc * 8);
 
-    &:before {
-	font-family: $font-awesome;
-	content: "\f175";
-	float: right;
+    @include font-size($font-size);
 
-	@include rem('margin', 10px 0 0 10px);
-	@include rem('font-size', 14px);
-    }
 }
 
 // Navbar dropdown item
 // -----------------------------------------------------------------------------
 .dropdown-item {
-    @include rem('font-size', 14px);
-    @include rem('padding', 5px 10px);
+    padding: ($calc * 5) ($calc * 10);
 
-    .fa {
-	transition: 0.5s all;
-
-	@include rem('padding-right', 10px);
+    @include font-size($font-size);
+    @include hover {
+	@include border-radius($border-radius);
     }
+}
 
-    &:hover {
-	@include rem('border-radius', 3px);
-    }
+.dropdown-item .fa {
+    transition: 0.5s all;
+    padding-right: ($calc * 10);
 }

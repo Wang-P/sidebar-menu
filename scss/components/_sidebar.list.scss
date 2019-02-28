@@ -3,22 +3,21 @@
 // -----------------------------------------------------------------------------
 .list {
     max-height: 80vh;
+    padding: 0 ($calc * 20);
 
-    @include rem('font-size', 14px);
-    @include rem('padding', 0 20px);
+    @include font-size($font-size);
+}
 
-    &-item {
-	padding: 0;
+.list-item {
+    padding: 0;
+    margin-top: ($calc * 10);
+    line-height: ($calc * 34);
+}
 
-	@include rem('margin-top', 10px);
-	@include rem('line-height', 34px);
-    }
+.list-name {
+    text-transform: uppercase;
 
-    &-name {
-	text-transform: uppercase;
-
-	@include rem('font-size', 12px);
-    }
+    @include font-size($font-size-sm);
 }
 
 // Sidebar list multi-level
@@ -26,37 +25,32 @@
 .list-ml {
     overflow: hidden;
     padding: 0;
+}
 
-    &-item {
-	margin: 0;
+.list-ml-item {
+    margin: 0;
 
-	@extend .list-item;
-    }
+    @extend .list-item;
+}
 
-    &-none {
-	display: none;
-
-	@include rem('margin', 15px 0 15px 10px);
-	@include rem('padding-left', 10px);
-    }
+.list-ml-none {
+    display: none;
+    padding-left: ($calc * 10);
+    margin-top: ($calc * 15);
+    margin-bottom: ($calc * 15);
+    margin-left: ($calc * 20);
 }
 
 // Sidebar list link
 // -----------------------------------------------------------------------------
 .list-link {
     display: block;
-
-    @include rem('margin-bottom', 2px);
-    @include rem('padding', 0 10px);
-
-    .fa {
-	@include rem('margin-right', 10px);
-    }
-
-    &:hover {
+    padding: 0 ($calc * 10);
+    margin-bottom: ($calc * 2);
+    
+    @include border-radius($border-radius);
+    @include hover {
 	text-decoration: none;
-
-	@include rem('border-radius', 3px);
 
 	.fa {
 	    transform: rotate(360deg);
@@ -65,34 +59,34 @@
     }
 }
 
+.list-link .fa {
+    margin-right: ($calc * 10);
+}
+
 // Sidebar link arrow
 // -----------------------------------------------------------------------------
-.link-arrow {
+.link-arrow:before {
+    font-family: $font-awesome;
+    float: right;
+    margin-right: ($calc * 3);
+}
 
-    &:before {
-	float: right;
-	font-family: $font-awesome;
+.link-arrow.up:before {
+    content: "\f106";
+}
 
-	@include rem('margin', 0 3px 0 0);
-    }
+.link-arrow.down:before {
+    content: "\f107";
+}
 
-    &.up:before {
-	content: "\f106";
-    }
+.link-arrow.transition:before {
+    transition: 0.2s all;
+}
 
-    &.down:before {
-	content: "\f107";
-    }
+.link-arrow.rotate:before {
+    transform: rotate(180deg);
+}
 
-    &.transition:before {
-	transition: 0.2s all;
-    }
-
-    &.rotate:before {
-	transform: rotate(180deg);
-    }
-
-    &.rotate-revert:before {
-	transform: rotate(-180deg);
-    }
+.link-arrow.rotate-revert:before {
+    transform: rotate(-180deg);
 }
