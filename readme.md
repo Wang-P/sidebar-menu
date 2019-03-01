@@ -6,19 +6,8 @@ Sidebar menu is simple and fast template for dashboard on bootstrap 4
 ## Installation
 
 ```
-git clone https://github.com/accgit/sidebar-menu.git path/to/dir
-npm install
+npm install --save sidebar-menu-accgit
 ```
-
-or
-
-```
-npm i sidebar-menu-accgit
-```
-
-And modify the paths to CSS and JS in the html document. Or, we can use the
-[pre-prepared project](https://github.com/accgit/sidebar-menu-project)
-with Grunt to install and minify CSS and JS.
 
 ## Built on
 
@@ -29,31 +18,47 @@ with Grunt to install and minify CSS and JS.
 - Open Sans @font-face kit
 - Nanobar
 
-## Two basic theme for sidebar and dropdown menu
+## The template has two themes
+
+White color for navbar and content boxs.
+
+```html
+<body class="body-white-theme">
+```
 
 White color for sidebar.
 
 ```html
-<div class="sidebar bg-white-menu">
+<div class="sidebar sidebar-white-theme">
 ```
 
-White color for dropdown.
+White color for dropdown menu.
 
 ```html
-<div class="collapse navbar-collapse bg-white-dropdown">
+<div class="dropdown-menu dropdown-menu-white-theme ">
+```
+
+Dark color for navbar and content boxs.
+
+```html
+<body class="body-dark-theme">
 ```
 
 Dark color for sidebar.
 
 ```html
-<div class="sidebar bg-dark-menu">
+<div class="sidebar sidebar-dark-theme">
 ```
 
-Dark color for dropdown.
+Dark color for dropdown menu.
 
 ```html
-<div class="collapse navbar-collapse bg-dark-dropdown">
+<div class="dropdown-menu dropdown-menu-dark-theme ">
 ```
+
+## Edit or add theme
+
+To edit or add a new color theme, edit the ```scss/themes/_theme.colors.scss``` file in the directory.
 
 ## Support the project
 
