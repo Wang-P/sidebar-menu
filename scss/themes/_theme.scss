@@ -10,8 +10,24 @@
       color: map-get($map, body-color);
     }
 
-    .nanobar .bar {
+    &-#{$theme} .nanobar .bar {
       background: map-get($map, nanobar-bg);
+    }
+
+    &-#{$theme} .navbar-link,
+    &-#{$theme} .dropdown-link {
+      color: map-get($map, navbar-link-color);
+    }
+
+    &-#{$theme} .navbar-bars {
+      color: map-get($map, navbar-bars-color);
+      @include hover {
+        color: map-get($map, navbar-bars-color-o);
+      }
+    }
+
+    &-#{$theme} .dropdown-employ:before {
+      color: map-get($map, navbar-bars-color);
     }
   }
 }
@@ -86,32 +102,15 @@
   }
 }
 
-.navbar
+.dropdown-menu
 {
   @each $theme, $map in $theme-colors {
-    &-#{$theme} .navbar-link {
-      color: map-get($map, navbar-link-color);
-    }
-
-    &-#{$theme} .navbar-bars {
-      color: map-get($map, navbar-bars-color);
-      @include hover {
-        color: map-get($map, navbar-bars-color-o);
-      }
-    }
-  }
-}
-
-.dropdown
-{
-  @each $theme, $map in $theme-colors {
-    &-#{$theme} .dropdown-menu {
+    &-#{$theme} {
       background: map-get($map, dropdown-bg);
     }
 
-    &-#{$theme} .dropdown-item,
-    &-#{$theme} .dropdown-link {
-      color: map-get($map, navbar-link-color);
+    &-#{$theme} .dropdown-item {
+      color: map-get($map, dropdown-item);
 
       .fa {
         color: map-get($map, icon-color);

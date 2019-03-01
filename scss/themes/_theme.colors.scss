@@ -21,9 +21,10 @@ $theme-colors: (
   'navbar-bars-color-o':  darken($white, 75),
   'dropdown-bg':          darken($white, 5),
   'dropdown-link-o':      $white,
+  'dropdown-item':        darken($white, 75),
   'scrollbar-bg':         darken($white, 10),
   'nanobar-bg':           darken($white, 75),
-),
+  ),
 'dark-theme': (
   'body-bg':              lighten($dark, 5),
   'body-color':           lighten($dark, 75),
@@ -40,7 +41,8 @@ $theme-colors: (
   'navbar-bars-color-o':  lighten($dark, 75),
   'dropdown-bg':          lighten($dark, 5),
   'dropdown-link-o':      $dark,
+  'dropdown-item':        lighten($white, 75),
   'scrollbar-bg':         lighten($dark, 10),
   'nanobar-bg':           lighten($dark, 75),
-),
+  ),
 );
