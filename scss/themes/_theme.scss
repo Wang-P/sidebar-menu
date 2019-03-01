@@ -72,7 +72,7 @@
       color: map-get($map, list-color);
     }
 
-    .list-ml-none {
+    &-#{$theme} .list-ml-none {
       border-left-color: map-get($map, list-border-color);
     }
 
