@@ -2,36 +2,45 @@
 //
 // theme colors
 //
-$color: rgb(255, 255, 255);
+$white: rgb(255, 255, 255);
+$dark:  rgb(38, 42, 47);
 $theme-colors: (
-  'light': (
-
-    // body
-    'body-bg':       darken($color, 5),
-    'body-color':    darken($color, 75),
-
-    // sidebar
-    'sidebar-bg':    $color,
-
-    // list
-    'list-color':    darken($color, 35),
-
-    // links
-    'link-color':    darken($color, 75),
-    'link-bg':       darken($color, 5),
-
-    // icons
-    'icon-color':    darken($color, 20),
-    'icon-color-o':  darken($color, 65),
-
-    // dropdown
-    'dropdown-bg':   darken($color, 5),
-    'dropdown-link-o': $color,
-
-    // scrollbar
-    'scrollbar-bg': darken($color, 10),
-
-    // nanobar
-    'nanobar-bg': darken($color, 75),
-  ),
+'white-theme': (
+  'body-bg':              darken($white, 5),
+  'body-color':           darken($white, 75),
+  'content-bg':           $white,
+  'sidebar-bg':           $white,
+  'list-color':           darken($white, 35),
+  'list-border-color':    darken($dark, 5),
+  'list-link-color':      darken($white, 75),
+  'list-link-bg':         darken($white, 5),
+  'icon-color':           darken($white, 20),
+  'icon-color-o':         darken($white, 65),
+  'navbar-link-color':    darken($white, 75),
+  'navbar-bars-color':    darken($white, 20),
+  'navbar-bars-color-o':  darken($white, 75),
+  'dropdown-bg':          darken($white, 5),
+  'dropdown-link-o':      $white,
+  'scrollbar-bg':         darken($white, 10),
+  'nanobar-bg':           darken($white, 75),
+),
+'dark-theme': (
+  'body-bg':              lighten($dark, 5),
+  'body-color':           lighten($dark, 75),
+  'content-bg':           $dark,
+  'sidebar-bg':           $dark,
+  'list-color':           lighten($dark, 35),
+  'list-border-color':    lighten($dark, 5),
+  'list-link-color':      lighten($dark, 75),
+  'list-link-bg':         lighten($dark, 5),
+  'icon-color':           lighten($dark, 20),
+  'icon-color-o':         lighten($dark, 65),
+  'navbar-link-color':    lighten($dark, 75),
+  'navbar-bars-color':    lighten($dark, 20),
+  'navbar-bars-color-o':  lighten($dark, 75),
+  'dropdown-bg':          lighten($dark, 5),
+  'dropdown-link-o':      $dark,
+  'scrollbar-bg':         lighten($dark, 10),
+  'nanobar-bg':           lighten($dark, 75),
+),
 );

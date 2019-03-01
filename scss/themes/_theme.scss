@@ -2,27 +2,25 @@
 //
 // theme default
 //
-body
+.body
 {
   @each $theme, $map in $theme-colors {
-    & {
+    &-#{$theme} {
       background: map-get($map, body-bg);
       color: map-get($map, body-color);
     }
 
-    .navbar-link {
-      color: map-get($map, link-color);
-    }
-
-    .navbar-bars {
-      color: map-get($map, icon-color);
-      @include hover {
-        color: map-get($map, icon-color-o);
-      }
-    }
-
     .nanobar .bar {
       background: map-get($map, nanobar-bg);
+    }
+  }
+}
+
+.content
+{
+  @each $theme, $map in $theme-colors {
+    &-#{$theme} {
+      background: map-get($map, content-bg);
     }
   }
 }
@@ -35,14 +33,14 @@ body
     }
 
     &-#{$theme} .list-link {
-      color: map-get($map, link-color);
+      color: map-get($map, list-link-color);
 
       &-current {
-        background: map-get($map, link-bg);
+        background: map-get($map, list-link-bg);
       }
 
       @include hover {
-        background: map-get($map, link-bg);
+        background: map-get($map, list-link-bg);
 
         .fa {
           color: map-get($map, icon-color-o);
@@ -56,6 +54,10 @@ body
 
     &-#{$theme} .list-name {
       color: map-get($map, list-color);
+    }
+
+    .list-ml-none {
+      border-left-color: map-get($map, list-border-color);
     }
 
     &-#{$theme} .link-arrow:before {
@@ -84,6 +86,22 @@ body
   }
 }
 
+.navbar
+{
+  @each $theme, $map in $theme-colors {
+    &-#{$theme} .navbar-link {
+      color: map-get($map, navbar-link-color);
+    }
+
+    &-#{$theme} .navbar-bars {
+      color: map-get($map, navbar-bars-color);
+      @include hover {
+        color: map-get($map, navbar-bars-color-o);
+      }
+    }
+  }
+}
+
 .dropdown
 {
   @each $theme, $map in $theme-colors {
@@ -93,7 +111,7 @@ body
 
     &-#{$theme} .dropdown-item,
     &-#{$theme} .dropdown-link {
-      color: map-get($map, link-color);
+      color: map-get($map, navbar-link-color);
 
       .fa {
         color: map-get($map, icon-color);
