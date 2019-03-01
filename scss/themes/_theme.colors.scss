@@ -1,6 +1,6 @@
 
 //
-// Theme colors
+// theme colors
 //
 $color: rgb(255, 255, 255);
 $theme-colors: (
@@ -27,5 +27,11 @@ $theme-colors: (
     // dropdown
     'dropdown-bg':   darken($color, 5),
     'dropdown-link-o': $color,
+
+    // scrollbar
+    'scrollbar-bg': darken($color, 10),
+
+    // nanobar
+    'nanobar-bg': darken($color, 75),
   ),
 );

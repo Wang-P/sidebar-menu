@@ -5,22 +5,22 @@
  * MIT License
 */
 
-// Bootstrap
+// bootstrap
 @import '../node_modules/bootstrap/scss/_functions';
 @import '../node_modules/bootstrap/scss/_variables';
 @import '../node_modules/bootstrap/scss/_mixins';
 
-// Utils
+// utils
 @import 'utils/_variables';
 
-// Base
+// base
 @import 'base/_body';
 
-// Layouts
+// layouts
 @import 'layout/_content';
 @import 'layout/_sidebar';
 
-// Components
+// components
 @import 'components/_navbar';
 @import 'components/_navbar.dropdown';
 @import 'components/_sidebar.list';
@@ -28,6 +28,6 @@
 @import 'components/_sidebar.toggle';
 @import 'components/_nanobar';
 
-// Themes
+// themes
 @import 'themes/_theme.colors';
 @import 'themes/_theme';

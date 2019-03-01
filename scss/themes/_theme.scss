@@ -1,6 +1,6 @@
 
 //
-// Theme default
+// theme default
 //
 body
 {
@@ -19,6 +19,10 @@ body
       @include hover {
         color: map-get($map, icon-color-o);
       }
+    }
+
+    .nanobar .bar {
+      background: map-get($map, nanobar-bg);
     }
   }
 }
@@ -60,6 +64,22 @@ body
 
     &-#{$theme} .link-arrow.active:before {
       color: map-get($map, icon-color-o);
+    }
+
+    &-#{$theme} .ps__thumb-y {
+      background: map-get($map, scrollbar-bg);
+    }
+
+    &-#{$theme} .ps__rail-y:hover .ps__thumb-y,
+    &-#{$theme} .ps__rail-y:focus .ps__thumb-y,
+    &-#{$theme} .ps__rail-y.ps--clicking .ps__thumb-y {
+      background: map-get($map, scrollbar-bg);
+    }
+
+    .ps .ps__rail-y:hover,
+    .ps .ps__rail-y:focus,
+    .ps .ps__rail-y.ps--clicking {
+      background: none;
     }
   }
 }
