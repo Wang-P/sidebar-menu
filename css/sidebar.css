@@ -237,6 +237,9 @@ body {
 .body-white-theme .dropdown-employ:before {
   color: #cccccc;
 }
+.body-white-theme .content-box {
+  background: white;
+}
 .body-dark-theme {
   background: #31373d;
   color: #e8eaec;
@@ -256,11 +259,7 @@ body {
 .body-dark-theme .dropdown-employ:before {
   color: #545c67;
 }
-
-.content-white-theme {
-  background: white;
-}
-.content-dark-theme {
+.body-dark-theme .content-box {
   background: #262a2f;
 }
 

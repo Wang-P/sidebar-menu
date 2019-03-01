@@ -29,13 +29,8 @@
     &-#{$theme} .dropdown-employ:before {
       color: map-get($map, navbar-bars-color);
     }
-  }
-}
 
-.content
-{
-  @each $theme, $map in $theme-colors {
-    &-#{$theme} {
+    &-#{$theme} .content-box {
       background: map-get($map, content-bg);
     }
   }
