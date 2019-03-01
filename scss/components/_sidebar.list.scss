@@ -1,92 +1,108 @@
 
+//
 // Sidebar list component
-// -----------------------------------------------------------------------------
-.list {
-    max-height: 80vh;
-    padding: 0 ($calc * 20);
+//
+.list
+{
+  max-height: 80vh;
+  padding: 0 ($calc * 20);
 
-    @include font-size($font-size);
+  @include font-size($font-size);
 }
 
-.list-item {
-    padding: 0;
-    margin-top: ($calc * 10);
-    line-height: ($calc * 34);
+.list-item
+{
+  padding: 0;
+  margin-top: ($calc * 10);
+  line-height: ($calc * 34);
 }
 
-.list-name {
-    text-transform: uppercase;
-
-    @include font-size($font-size-sm);
+.list-name
+{
+  text-transform: uppercase;
+  @include font-size($font-size-sm);
 }
 
+//
 // Sidebar list multi-level
-// -----------------------------------------------------------------------------
-.list-ml {
-    overflow: hidden;
-    padding: 0;
+//
+.list-ml
+{
+  overflow: hidden;
+  padding: 0;
 }
 
-.list-ml-item {
-    margin: 0;
-
-    @extend .list-item;
+.list-ml-item
+{
+  margin: 0;
+  @extend .list-item;
 }
 
-.list-ml-none {
-    display: none;
-    padding-left: ($calc * 10);
-    margin-top: ($calc * 15);
-    margin-bottom: ($calc * 15);
-    margin-left: ($calc * 20);
+.list-ml-none
+{
+  display: none;
+  padding-left: ($calc * 10);
+  margin-top: ($calc * 15);
+  margin-bottom: ($calc * 15);
+  margin-left: ($calc * 20);
 }
 
+//
 // Sidebar list link
-// -----------------------------------------------------------------------------
-.list-link {
-    display: block;
-    padding: 0 ($calc * 10);
-    margin-bottom: ($calc * 2);
-    
-    @include border-radius($border-radius);
-    @include hover {
-	text-decoration: none;
+//
+.list-link
+{
+  display: block;
+  padding: 0 ($calc * 10);
+  margin-bottom: ($calc * 2);
 
-	.fa {
-	    transform: rotate(360deg);
-	    transition: 0.5s all;
-	}
+  @include border-radius($border-radius);
+  @include hover {
+    text-decoration: none;
+
+    .fa {
+      transform: rotate(360deg);
+      transition: 0.5s all;
     }
+  }
 }
 
-.list-link .fa {
-    margin-right: ($calc * 10);
+.list-link .fa
+{
+  margin-right: ($calc * 10);
 }
 
+//
 // Sidebar link arrow
-// -----------------------------------------------------------------------------
-.link-arrow:before {
-    font-family: $font-awesome;
-    float: right;
-    margin-right: ($calc * 3);
+//
+.link-arrow:before
+{
+  font-family: $font-awesome;
+  float: right;
+  margin-right: ($calc * 3);
 }
 
-.link-arrow.up:before {
-    content: "\f106";
+.link-arrow.up:before
+{
+  content: "\f106";
 }
 
-.link-arrow.down:before {
-    content: "\f107";
+.link-arrow.down:before
+{
+  content: "\f107";
 }
 
-.link-arrow.transition:before {
-    transition: 0.2s all;
+.link-arrow.transition:before
+{
+  transition: 0.2s all;
 }
 
-.link-arrow.rotate:before {
-    transform: rotate(180deg);
+.link-arrow.rotate:before
+{
+  transform: rotate(180deg);
 }
 
-.link-arrow.rotate-revert:before {
-    transform: rotate(-180deg);
+.link-arrow.rotate-revert:before
+{
+  transform: rotate(-180deg);
 }

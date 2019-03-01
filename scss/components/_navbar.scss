@@ -1,13 +1,15 @@
 
+//
 // Navbar component
-// -----------------------------------------------------------------------------
-.navbar-link {
-    margin-right: ($calc * 20);
-    margin-left: ($calc * 3);
+//
+.navbar-link
+{
+  margin-right: ($calc * 20);
+  margin-left: ($calc * 3);
 }
 
-.navbar-bars {
-    transition: 0.2s all;
-
-    @include font-size($font-size);
+.navbar-bars
+{
+  transition: 0.2s all;
+  @include font-size($font-size);
 }

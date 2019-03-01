@@ -6,34 +6,28 @@
 */
 
 // Bootstrap
-// -----------------------------------------------------------------------------
-@import '../node_modules/bootstrap/scss/_functions.scss';
-@import '../node_modules/bootstrap/scss/_variables.scss';
-@import '../node_modules/bootstrap/scss/_mixins.scss';
+@import '../node_modules/bootstrap/scss/_functions';
+@import '../node_modules/bootstrap/scss/_variables';
+@import '../node_modules/bootstrap/scss/_mixins';
 
 // Utils
-// -----------------------------------------------------------------------------
-@import 'utils/_variables.scss';
-@import 'utils/_functions.scss';
+@import 'utils/_variables';
 
 // Base
-// -----------------------------------------------------------------------------
-@import 'base/_body.scss';
+@import 'base/_body';
 
 // Layouts
-// -----------------------------------------------------------------------------
-@import 'layout/_content.scss';
-@import 'layout/_sidebar.scss';
+@import 'layout/_content';
+@import 'layout/_sidebar';
 
 // Components
-// -----------------------------------------------------------------------------
-@import 'components/_navbar.scss';
-@import 'components/_navbar.dropdown.scss';
-@import 'components/_sidebar.list.scss';
-@import 'components/_sidebar.list.scrollbar.scss';
-@import 'components/_sidebar.toggle.scss';
-@import 'components/_nanobar.scss';
+@import 'components/_navbar';
+@import 'components/_navbar.dropdown';
+@import 'components/_sidebar.list';
+@import 'components/_sidebar.list.scrollbar';
+@import 'components/_sidebar.toggle';
+@import 'components/_nanobar';
 
 // Themes
-// -----------------------------------------------------------------------------
-@import 'themes/_theme.scss';
+@import 'themes/_theme.colors';
+@import 'themes/_theme';

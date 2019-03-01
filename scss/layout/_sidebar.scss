@@ -1,17 +1,20 @@
 
+//
 // Sidebar layout
-// -----------------------------------------------------------------------------
-.sidebar {
-    transition: margin 0.15s ease-out;
-    min-height: calc(100vh - #{$top});
-    margin-left: - $sidebar;
+//
+.sidebar
+{
+  transition: margin 0.15s ease-out;
+  min-height: calc(100vh - #{$top});
+  margin-left: - $sidebar;
 
-    @include border-top-right-radius($border-radius);
-    @include media-breakpoint-up('md') {
-	margin-left: 0;
-    }
+  @include border-top-right-radius($border-radius);
+  @include media-breakpoint-up('md') {
+    margin-left: 0;
+  }
 }
 
-.sidebar-menu {
-    width: $sidebar;
+.sidebar-menu
+{
+  width: $sidebar;
 }

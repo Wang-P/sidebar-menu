@@ -1,15 +1,18 @@
 
+//
 // Nanobar component
-// -----------------------------------------------------------------------------
-.nanobar {
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    height: $nanobar;
+//
+.nanobar
+{
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  height: $nanobar;
 }
 
-.nanobar .bar {
-    height: 100%;
-    transition: height 0.3s;
-    width: 0;
+.nanobar .bar
+{
+  height: 100%;
+  transition: height 0.3s;
+  width: 0;
 }

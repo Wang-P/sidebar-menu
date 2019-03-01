@@ -1,72 +1,93 @@
 
-// Theme colors
-// -----------------------------------------------------------------------------
-
-$color: rgb(255, 255, 255);
-$theme-colors: (
-    'light': (
-	'body-bg': darken($color, 5),
-	'body-color': darken($color, 75),
-	'sidebar-bg': $color,
-	'list-name': darken($color, 50),
-	'list-link': darken($color, 75),
-	'list-link-hover': darken($color, 5),
-	'list-icon': darken($color, 20),
-	'list-icon-hover': darken($color, 75),
-	'dropdown-bg': darken($color, 5),
-	'dropdown-item':darken($color, 75),
-    ),
-);
-
-body {
-    @each $theme, $map in $theme-colors {
-	& {
-	    background: map-get($map, body-bg);
-	    color: map-get($map, body-color);
-	}
+//
+// Theme default
+//
+body
+{
+  @each $theme, $map in $theme-colors {
+    & {
+      background: map-get($map, body-bg);
+      color: map-get($map, body-color);
     }
+
+    .navbar-link {
+      color: map-get($map, link-color);
+    }
+
+    .navbar-bars {
+      color: map-get($map, icon-color);
+      @include hover {
+        color: map-get($map, icon-color-o);
+      }
+    }
+  }
 }
 
-.sidebar {
-    @each $theme, $map in $theme-colors {
-	&-#{$theme} {
-	    background: map-get($map, sidebar-bg);
-	}
-
-	&-#{$theme} .list-link {
-	    color: map-get($map, list-link);
-
-	    &-current {
-		background: map-get($map, list-link-hover);
-	    }
-
-	    @include hover {
-		background: map-get($map, list-link-hover);
-
-		.fa {
-		    color: map-get($map, list-icon-hover);
-		}
-	    }
-	}
-
-	&-#{$theme} .list-name {
-	    color: map-get($map, list-name);
-	}
-
-	&-#{$theme} .list-link .fa {
-	    color: map-get($map, list-icon);
-	}
+.sidebar
+{
+  @each $theme, $map in $theme-colors {
+    &-#{$theme} {
+      background: map-get($map, sidebar-bg);
     }
+
+    &-#{$theme} .list-link {
+      color: map-get($map, link-color);
+
+      &-current {
+        background: map-get($map, link-bg);
+      }
+
+      @include hover {
+        background: map-get($map, link-bg);
+
+        .fa {
+          color: map-get($map, icon-color-o);
+        }
+      }
+    }
+
+    &-#{$theme} .list-link .fa {
+      color: map-get($map, icon-color);
+    }
+
+    &-#{$theme} .list-name {
+      color: map-get($map, list-color);
+    }
+
+    &-#{$theme} .link-arrow:before {
+      color: map-get($map, icon-color);
+    }
+
+    &-#{$theme} .link-arrow.active:before {
+      color: map-get($map, icon-color-o);
+    }
+  }
 }
 
-.dropdown {
-    @each $theme, $map in $theme-colors {
-	&-#{$theme} {
-	    background: map-get($map, dropdown-bg);
-	}
-
-	&-#{$theme} .dropdown-item {
-	    color: map-get($map, dropdown-item);
-	}
+.dropdown
+{
+  @each $theme, $map in $theme-colors {
+    &-#{$theme} .dropdown-menu {
+      background: map-get($map, dropdown-bg);
     }
+
+    &-#{$theme} .dropdown-item,
+    &-#{$theme} .dropdown-link {
+      color: map-get($map, link-color);
+
+      .fa {
+        color: map-get($map, icon-color);
+      }
+    }
+
+    &-#{$theme} .dropdown-item {
+      @include hover {
+        background: map-get($map, dropdown-link-o);
+      }
+    }
+
+    &-#{$theme} .dropdown-employ:before {
+      color: map-get($map, icon-color);
+    }
+  }
 }

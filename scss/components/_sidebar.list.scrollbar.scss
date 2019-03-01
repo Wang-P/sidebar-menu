@@ -1,23 +1,29 @@
 
+//
 // List scrollbar component
-// -----------------------------------------------------------------------------
-.list-scrollbar {
-    position: relative;
-    overflow: hidden;
+//
+.list-scrollbar
+{
+  position: relative;
+  overflow: hidden;
 }
 
+//
 // List custom scrollbar
-// -----------------------------------------------------------------------------
-.ps__thumb-y {
-    width: $scrollbar;
+//
+.ps__thumb-y
+{
+  width: $scrollbar;
 }
 
-.ps__rail-y {
-    margin-top: ($calc * 1);
+.ps__rail-y
+{
+  margin-top: ($calc * 1);
 }
 
 .ps__rail-y:hover .ps__thumb-y,
 .ps__rail-y:focus .ps__thumb-y,
-.ps__rail-y.ps--clicking .ps__thumb-y {
-    width: $scrollbar;
+.ps__rail-y.ps--clicking .ps__thumb-y
+{
+  width: $scrollbar;
 }

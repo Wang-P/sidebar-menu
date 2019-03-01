@@ -1,0 +1,31 @@
+
+//
+// Theme colors
+//
+$color: rgb(255, 255, 255);
+$theme-colors: (
+  'light': (
+
+    // body
+    'body-bg':       darken($color, 5),
+    'body-color':    darken($color, 75),
+
+    // sidebar
+    'sidebar-bg':    $color,
+
+    // list
+    'list-color':    darken($color, 35),
+
+    // links
+    'link-color':    darken($color, 75),
+    'link-bg':       darken($color, 5),
+
+    // icons
+    'icon-color':    darken($color, 20),
+    'icon-color-o':  darken($color, 65),
+
+    // dropdown
+    'dropdown-bg':   darken($color, 5),
+    'dropdown-link-o': $color,
+  ),
+);

@@ -1,10 +1,12 @@
 
+//
 // Sidebar toggle component
-// -----------------------------------------------------------------------------
-.toggle-sidebar .sidebar {
-    margin-left: 0;
+//
+.toggle-sidebar .sidebar
+{
+  margin-left: 0;
 
-    @include media-breakpoint-up('md') {
-	margin-left: - $sidebar;
-    }
+  @include media-breakpoint-up('md') {
+    margin-left: - $sidebar;
+  }
 }
