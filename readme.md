@@ -1,4 +1,3 @@
-
 ## Sidebar menu on bootstrap 4
 
 Sidebar menu is simple and fast template for dashboard on bootstrap 4
