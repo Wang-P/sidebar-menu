@@ -9,24 +9,16 @@
 @import '../node_modules/bootstrap/scss/_variables';
 @import '../node_modules/bootstrap/scss/_mixins';
 
-// utils
+// sidebar
 @import 'utils/_variables';
-
-// base
 @import 'base/_body';
-
-// layouts
 @import 'layout/_content';
 @import 'layout/_sidebar';
-
-// components
 @import 'components/_navbar';
 @import 'components/_navbar.dropdown';
 @import 'components/_sidebar.list';
 @import 'components/_sidebar.list.scrollbar';
 @import 'components/_sidebar.toggle';
 @import 'components/_nanobar';
-
-// themes
 @import 'themes/_theme.colors';
 @import 'themes/_theme';
