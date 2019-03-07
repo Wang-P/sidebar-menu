@@ -6,23 +6,23 @@
 (function($) {
 
   // toggle sidebar menu
-  $('#navbar-sidebar-toggle').on('click', function() {
-    $('#wrapper').toggleClass('toggle-sidebar');
+  $('#sidebar-toggle').on('click', function() {
+    $('#wrapper').toggleClass('sidebar-toggle');
   });
 
   // list init
-  $('.list-ml-item').each(function() {
+  $('.list-item').each(function() {
     $(this).parent().find('.link-arrow').addClass('up');
-    if ($(this).children('.list-link-current').length > 0) {
-      $(this).parents().find('.list-link-current').next('.list-ml-none').show();
-      $(this).parent().find('.link-arrow').addClass('active down');
+    if ($(this).find('.link-current').length > 0) {
+      $(this).parent().find('.link-current.link-arrow').addClass('active down');
+      $(this).parent().find('.link-current').next('.list-hidden').show();
     }
   });
 
   // list open hidden
   $('.list-link').on('click', function() {
     $(this).parent().find('.link-arrow').toggleClass('active');
-    $(this).next('.list-ml-none').slideToggle('fast');
+    $(this).next('.list-hidden').slideToggle('fast');
   });
 
   // list transition arrow

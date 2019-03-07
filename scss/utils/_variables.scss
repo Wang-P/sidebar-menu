@@ -1,20 +1,16 @@
-//
-// variables
-//
-
 // font family
 $font-sans: 'Open Sans', sans-serif;
 $font-awesome: 'FontAwesome';
 
-// unit rem
-$calc: $spacer * 0.0625;
+// browser default value
+$browser-context: 16;
 
 // font size
 $font-size: 14;
 $font-size-sm: 12;
 
 // sizes
-$sidebar:   $calc * 272;
-$scrollbar: $calc * 5;
-$avatar:    $calc * 36;
-$top:	      $calc * 57;
+$sm-sidebar:    rem(272);
+$sm-scrollbar:  rem(5);
+$sm-avatar:     rem(36);
+$sm-top:        rem(57);

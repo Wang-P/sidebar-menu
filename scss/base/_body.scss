@@ -1,9 +1,9 @@
 //
 // base elements
 //
-body
-{
+
+.body {
   overflow-x: hidden;
-  margin-top: $top;
+  margin-top: $sm-top;
   font-family: $font-sans;
 }
