@@ -49,69 +49,8 @@ Lighten or darken theme for body, navbar, dropdown and content.
 <div class="content-box content-darken">
 ```
 
-## List in sidebar menu
-Sample for simple or multiple-level menu.
-
-```html
-<!-- start list -->
-<ul class="list list-unstyled list-scrollbar">
-
-  <!-- simple menu -->
-  <li class="list-item">
-
-    <!-- title for simple menu -->
-    <p class="list-title text-uppercase">Title</p>
-
-    <!-- first level -->
-    <ul class="list-unstyled">
-
-      <!-- list item first level -->
-      <li><a href="#" class="list-link">Item</a></li>
-      <li><a href="#" class="list-link link-current">Item</a></li>
-
-    </ul>
-  </li>
-
-  <!-- multiple-level menu -->
-  <li class="list-item">
-
-    <!-- title for multiple-level menu -->
-    <p class="list-title text-uppercase">Title</p>
-
-    <!-- first level -->
-    <ul class="list-unstyled">
-
-      <!-- list item first level -->
-      <li><a href="#" class="list-link"><i class="fa fa-home" aria-hidden="true"></i>Item</a></li>
-      <li><a href="#" class="list-link link-arrow link-current"><i class="fa fa-cog" aria-hidden="true"></i>Item</a>
-
-        <!-- second level -->
-        <ul class="list-unstyled list-hidden">
-
-          <!-- list item second level -->
-          <li><a href="#" class="list-link">Item</a></li>
-          <li><a href="#" class="list-link">Item</a></li>
-          <li><a href="#" class="list-link link-arrow link-current">Item</a>
-
-            <!-- third level -->
-            <ul class="list-unstyled list-hidden">
-
-              <!-- list item third level -->
-              <li><a href="#" class="list-link">Item</a></li>
-              <li><a href="#" class="list-link link-current">Item</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-```
-
-## Classes
-class: ```link-current``` mark active link.  
-class: ```link-arrow``` mark the next drop-down menu icon.  
-class: ```list-hidden``` hides another level menu.
+## Preview sidebar menu
+![alt text](https://raw.githubusercontent.com/accgit/sidebar-menu/master/img/sidebar.png)
 
 ## Edit or add theme
 To edit or add a new color theme, edit the ```scss/themes/_theme.colors.scss``` file in the directory.
