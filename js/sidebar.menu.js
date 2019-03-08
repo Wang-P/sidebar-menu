@@ -14,8 +14,8 @@
   $('.list-item').each(function() {
     $(this).parent().find('.link-arrow').addClass('up');
     if ($(this).find('.link-current').length > 0) {
-      $(this).parent().find('.link-current.link-arrow').addClass('active down');
-      $(this).parent().find('.link-current').next('.list-hidden').show();
+        $(this).parent().find('.link-current.link-arrow').addClass('active down');
+        $(this).parent().find('.link-current').next('.list-hidden').show();
     }
   });
 
@@ -30,7 +30,7 @@
     $(this).addClass('transition');
     $(this).toggleClass('rotate');
     if ($(this).parent().find('.link-arrow').hasClass('down')) {
-      $(this).toggleClass('rotate-revert');
+        $(this).toggleClass('rotate-revert');
     }
   });
 

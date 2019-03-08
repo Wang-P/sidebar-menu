@@ -200,86 +200,83 @@
   transition: height 0.3s;
 }
 
-.body-default {
+.body-lighten {
   background-color: #f4f4f4;
   color: #404040;
 }
 
-.sidebar-default {
+.sidebar-lighten {
   background-color: white;
 }
 
-.sidebar-default .ps__rail-y.ps--clicking .ps__thumb-y,
-.sidebar-default .ps__rail-y:focus .ps__thumb-y,
-.sidebar-default .ps__rail-y:hover .ps__thumb-y,
-.sidebar-default .ps__thumb-y {
+.sidebar-lighten .ps__rail-y.ps--clicking .ps__thumb-y,
+.sidebar-lighten .ps__rail-y:focus .ps__thumb-y,
+.sidebar-lighten .ps__rail-y:hover .ps__thumb-y,
+.sidebar-lighten .ps__thumb-y {
   background-color: #e6e6e6;
 }
 
-.sidebar-default .list {
+.sidebar-lighten .list {
   color: #a6a6a6;
 }
 
-.sidebar-default .list-link {
+.sidebar-lighten .list-link {
   color: #404040;
 }
 
-.sidebar-default .list-hidden {
+.sidebar-lighten .list-hidden {
   border-left: 0.0625rem solid #f0f0f0;
 }
 
-.sidebar-default .link-current,
-.sidebar-default .list-link:hover {
+.sidebar-lighten .link-current,
+.sidebar-lighten .list-link:hover {
   background-color: #f4f4f4;
 }
 
-.sidebar-default .link-arrow:before,
-.sidebar-default .list-link .fa {
-  opacity: 0.3;
-}
-
-.sidebar-default .link-arrow.active:before,
-.sidebar-default .list-link:hover .fa {
-  opacity: 1.0;
-}
-
-.navbar-default .navbar-link {
+.navbar-lighten .navbar-link {
   color: #404040;
 }
 
-.navbar-default .navbar-bars {
+.navbar-lighten .navbar-bars {
   color: #404040;
+}
+
+.dropdown-logged-lighten .dropdown-link {
+  color: #404040;
+}
+
+.dropdown-menu-lighten {
+  background-color: #f4f4f4;
+}
+
+.dropdown-menu-lighten .dropdown-logged-item {
+  color: #404040;
+}
+
+.dropdown-menu-lighten .dropdown-logged-item:hover {
+  background-color: white;
+  color: #404040;
+}
+
+.content-lighten {
+  background-color: white;
+}
+
+.sidebar-lighten .link-arrow:before,
+.sidebar-lighten .list-link .fa,
+.navbar-lighten .navbar-bars,
+.dropdown-logged-lighten .dropdown-logged-toggle:before,
+.dropdown-menu-lighten .dropdown-logged-item .fa {
   opacity: 0.3;
 }
 
-.navbar-default .navbar-bars:hover {
+.navbar-lighten .navbar-bars:hover {
   opacity: 0.7;
 }
 
-.dropdown-default .dropdown-link {
-  color: #404040;
-}
-
-.dropdown-default .dropdown-logged-menu {
-  background-color: #f4f4f4;
-}
-
-.dropdown-default .dropdown-logged-toggle:before,
-.dropdown-default .dropdown-logged-item .fa {
-  opacity: 0.3;
-}
-
-.dropdown-default .dropdown-logged-item {
-  color: #404040;
-}
-
-.dropdown-default .dropdown-logged-item:hover {
-  background-color: white;
-  color: #404040;
-}
-
-.content-default {
-  background-color: white;
+.sidebar-lighten .link-arrow.active:before,
+.sidebar-lighten .list-link:hover .fa {
+  opacity: 1.0;
 }
 
 .ps .ps__rail-y.ps--clicking,
@@ -325,22 +322,40 @@
   background-color: #30353c;
 }
 
-.sidebar-darken .link-arrow:before,
-.sidebar-darken .list-link .fa {
-  opacity: 0.3;
-}
-
-.sidebar-darken .link-arrow.active:before,
-.sidebar-darken .list-link:hover .fa {
-  opacity: 1.0;
-}
-
 .navbar-darken .navbar-link {
   color: #cbd0d5;
 }
 
 .navbar-darken .navbar-bars {
   color: #cbd0d5;
+}
+
+.dropdown-logged-darken .dropdown-link {
+  color: #cbd0d5;
+}
+
+.dropdown-menu-darken {
+  background-color: #30353c;
+}
+
+.dropdown-menu-darken .dropdown-logged-item {
+  color: #cbd0d5;
+}
+
+.dropdown-menu-darken .dropdown-logged-item:hover {
+  background-color: #262a2f;
+  color: #cbd0d5;
+}
+
+.content-darken {
+  background-color: #262a2f;
+}
+
+.sidebar-darken .link-arrow:before,
+.sidebar-darken .list-link .fa,
+.navbar-darken .navbar-bars,
+.dropdown-logged-darken .dropdown-logged-toggle:before,
+.dropdown-menu-darken .dropdown-logged-item .fa {
   opacity: 0.3;
 }
 
@@ -348,30 +363,9 @@
   opacity: 0.7;
 }
 
-.dropdown-darken .dropdown-link {
-  color: #cbd0d5;
-}
-
-.dropdown-darken .dropdown-logged-menu {
-  background-color: #30353c;
-}
-
-.dropdown-darken .dropdown-logged-toggle:before,
-.dropdown-darken .dropdown-logged-item .fa {
-  opacity: 0.3;
-}
-
-.dropdown-darken .dropdown-logged-item {
-  color: #cbd0d5;
-}
-
-.dropdown-darken .dropdown-logged-item:hover {
-  background-color: #262a2f;
-  color: #cbd0d5;
-}
-
-.content-darken {
-  background-color: #262a2f;
+.sidebar-darken .link-arrow.active:before,
+.sidebar-darken .list-link:hover .fa {
+  opacity: 1.0;
 }
 
 .ps .ps__rail-y.ps--clicking,

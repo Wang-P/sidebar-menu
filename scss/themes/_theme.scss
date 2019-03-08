@@ -36,22 +36,41 @@
     background-color: map-get($map, list-link-bg);
   }
 
-  .sidebar-#{$theme} .link-arrow:before,
-  .sidebar-#{$theme} .list-link .fa {
-    opacity: 0.3;
-  }
-
-  .sidebar-#{$theme} .link-arrow.active:before,
-  .sidebar-#{$theme} .list-link:hover .fa {
-    opacity: 1.0;
-  }
-
   .navbar-#{$theme} .navbar-link {
     color: map-get($map, navbar-link);
   }
 
   .navbar-#{$theme} .navbar-bars {
     color: map-get($map, navbar-link);
+  }
+
+  .dropdown-logged-#{$theme} .dropdown-link {
+    color: map-get($map, dropdown-link);
+  }
+
+  .dropdown-menu-#{$theme} {
+    background-color: map-get($map, dropdown-bg);
+  }
+
+  .dropdown-menu-#{$theme} .dropdown-logged-item {
+    color: map-get($map, dropdown-link);
+  }
+
+  .dropdown-menu-#{$theme} .dropdown-logged-item:hover {
+    background-color: map-get($map, dropdown-item-bg);
+    color: map-get($map, dropdown-link);
+  }
+
+  .content-#{$theme} {
+    background-color: map-get($map, content-bg);
+  }
+
+  // opacity icons
+  .sidebar-#{$theme} .link-arrow:before,
+  .sidebar-#{$theme} .list-link .fa,
+  .navbar-#{$theme} .navbar-bars,
+  .dropdown-logged-#{$theme} .dropdown-logged-toggle:before,
+  .dropdown-menu-#{$theme} .dropdown-logged-item .fa {
     opacity: 0.3;
   }
 
@@ -59,30 +78,9 @@
     opacity: 0.7;
   }
 
-  .dropdown-#{$theme} .dropdown-link {
-    color: map-get($map, dropdown-link);
-  }
-
-  .dropdown-#{$theme} .dropdown-logged-menu {
-    background-color: map-get($map, dropdown-bg);
-  }
-
-  .dropdown-#{$theme} .dropdown-logged-toggle:before,
-  .dropdown-#{$theme} .dropdown-logged-item .fa {
-    opacity: 0.3;
-  }
-
-  .dropdown-#{$theme} .dropdown-logged-item {
-    color: map-get($map, dropdown-link);
-  }
-
-  .dropdown-#{$theme} .dropdown-logged-item:hover {
-    background-color: map-get($map, dropdown-item-bg);
-    color: map-get($map, dropdown-link);
-  }
-
-  .content-#{$theme} {
-    background-color: map-get($map, content-bg);
+  .sidebar-#{$theme} .link-arrow.active:before,
+  .sidebar-#{$theme} .list-link:hover .fa {
+    opacity: 1.0;
   }
 
   .ps .ps__rail-y.ps--clicking,

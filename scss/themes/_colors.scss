@@ -5,7 +5,7 @@
 $white: rgb(255, 255, 255);
 $dark:  rgb(38, 42, 47);
 $theme-colors: (
-  'default': (
+  'lighten': (
   'body-bg':           darken($white, 4.5),
   'body-color':        darken($white, 75),
   'sidebar-bg':        darken($white, 0),
