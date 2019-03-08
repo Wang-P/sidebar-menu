@@ -109,8 +109,8 @@ Sample for simple or multiple-level menu.
 ```
 
 ## Classes
-class: ```link-current``` mark active link.
-class: ```link-arrow``` mark the next drop-down menu icon.
+class: ```link-current``` mark active link.  
+class: ```link-arrow``` mark the next drop-down menu icon.  
 class: ```list-hidden``` hides another level menu.
 
 ## Edit or add theme
