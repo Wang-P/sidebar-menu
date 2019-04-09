@@ -61,6 +61,10 @@
     color: map-get($map, dropdown-link);
   }
 
+  .dropdown-menu-#{$theme} .dropdown-menu-arrow:after {
+    border-bottom-color: map-get($map, dropdown-bg);
+  }
+
   .content-#{$theme} {
     background-color: map-get($map, content-bg);
   }
