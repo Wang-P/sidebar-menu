@@ -30,11 +30,6 @@
   padding: 0 rem(10);
   margin-bottom: rem(2);
   @include border-radius($border-radius);
-
-  .fa {
-    margin-right: rem(10);
-  }
-
   @include hover {
     text-decoration: none;
 
@@ -43,6 +38,11 @@
       transition: 0.5s all;
     }
   }
+}
+
+.list-icon {
+  width: rem(22);
+  display: inline-block;
 }
 
 // arrow icon for list

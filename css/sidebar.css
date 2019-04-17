@@ -161,15 +161,17 @@
   margin-bottom: 0.125rem;
   border-radius: 0.25rem;
 }
-.list-link .fa {
-  margin-right: 0.625rem;
-}
 .list-link:hover {
   text-decoration: none;
 }
 .list-link:hover .fa {
   transform: rotate(360deg);
   transition: 0.5s all;
+}
+
+.list-icon {
+  width: 1.375rem;
+  display: inline-block;
 }
 
 .link-arrow:before {
