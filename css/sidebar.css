@@ -153,6 +153,7 @@
   display: none;
   padding-left: 0.625rem;
   margin: 0.9375rem 0 0.9375rem 0.625rem;
+  overflow: hidden;
 }
 
 .list-link {
